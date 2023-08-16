@@ -58,3 +58,9 @@ Prerequistes: have a Replit account
 1. The old `a.out` program should still be there, but you can delete that now:
 
         rm a.out
+
+### Modifying Your Code
+Let's modify the program to say hello to you instead of the entire world.
+
+1. Replace the text "World" with your first and last name (e.g., Dennis Ritchie)
+1. Now run the program again. Did you get the expected output to the command line?
