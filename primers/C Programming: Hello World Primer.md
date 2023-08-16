@@ -1,5 +1,8 @@
 ## Hello World Primer
 
+Welcome to the C programming language. In this primer, you will create a C program in the web-based integrated development environment (IDE) called Replit.
+Your program will simply print the words "Hello World", but if you can master these basic concepts, you will be able to create more complex programs.
+
 ### Creating a C Program in Replit
 Prerequistes: have a Replit account
 
