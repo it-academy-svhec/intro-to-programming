@@ -48,6 +48,10 @@ Prerequistes: have a Replit account
 
 1. Run `ls` to confirm that the program is showing.
 
-1. The old `a.out` program should still be there, but you can delete that with the following command:
+1. Run the `hello_world` program:
+
+        ./hello_world
+
+1. The old `a.out` program should still be there, but you can delete that now:
 
         rm a.out
