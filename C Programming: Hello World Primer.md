@@ -29,14 +29,14 @@ Prerequistes: have a Replit account
 
     Compile your main.c file into a binary executable program by running the following command:
 
-    gcc main.c
+        gcc main.c
 
 1. Now, run `ls` to see the result of compilation. You should see a file named `a.out`, which is the program compiled from the `main.c` source code file.
 
 1. Run the following command to run your program:
 
-    ./a.out
+        ./a.out
 
 1. You should see the following out on in the terminal:
 
-    Hello World
+        Hello World
