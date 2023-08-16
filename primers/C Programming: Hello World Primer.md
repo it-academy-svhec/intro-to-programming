@@ -31,12 +31,23 @@ Prerequistes: have a Replit account
 
         gcc main.c
 
-1. Now, run `ls` to see the result of compilation. You should see a file named `a.out`, which is the program compiled from the `main.c` source code file.
+1. Now, run `ls` to print the contents of the working directory and show the compiled program. You should see a file named `a.out`, which is the program compiled from the `main.c` source code file.
 
-1. Run the following command to run your program:
+1. In order to run an executable file or script on Linux/UNIX systems, you must prefix the name of the file with `./`. This assumes you are in the same directory as the file. Run the following command to run your program. By default, on Linux/UNIX systems, the `.out` file extension is used to denote executable files compiled from C source code.
 
         ./a.out
 
-1. You should see the following out on in the terminal:
+1. You should see the following output on the terminal:
 
         Hello World
+
+### Naming Programs
+1. Let's compile the program again program but this time give it a friendly name such as `hello_world`. The `-o` parameter allows you to name the compiled binary executable file. Run the following command to create a program called `hello_world`:
+
+        gcc -o hello_world main.c
+
+1. Run `ls` to confirm that the program is showing.
+
+1. The old `a.out` program should still be there, but you can delete that with the following command:
+
+        rm a.out
