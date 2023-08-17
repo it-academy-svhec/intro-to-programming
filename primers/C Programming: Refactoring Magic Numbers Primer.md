@@ -6,20 +6,30 @@ When programmers first define magic numbers, the intention may be clear, but ove
 
 ### Refactoring
 
-1. Create a new Repl and call it **Refactoring Discounts and Sales Tax**
-1. Develop 2 scenarios for input and expected output. This will help to ensure that refactoring doesn't break your already working code.
+1. Fork the source code from [Discounts and Sales Tax](https://replit.com/@JacobCook2/Discounts-and-Sales-Tax#main.c) and name it **Refactoring Discounts and Sales Tax**
+
+1. Run the program with two different inputs and record the results. You will use these inputs and outputs to test your code after refactoring since breaking the code is always a risk.
+
 1. Look at the code that creates a constant float variable: `const float DISCOUNT_RATE = 0.10;`. We use the keyword `const` to ensure that the value won't change later in the program. Constants are often named using uppercase with underscores to separate each word.
+
 1. Let's transform the magic number used to check if the total cost is eligible for a discount.
 
     a. Add the following line of code under the `DISCOUNT_RATE` declaration:
 
-   const float MIN_COST = 100.00;
+        const float MIN_COST = 100.00;
 
-    a. Replace the hardcoded `100.00` in the if statement condition with the new variable
+    b. Replace the hardcoded `100.00` in the if statement condition with the new variable
 
 1. Now, let's do the same for the sales tax value
-  a. Add the following line of code next:
 
-    const float VA_SALES_TAX = 0.053;
+    a. Add the following line of code next:
 
-  a. Replace the hardcoded `0.053` in the sales tax calculation expression with the new variable
+        const float VA_SALES_TAX = 0.053;
+
+    b. Replace the hardcoded `0.053` in the sales tax calculation expression with the new variable
+
+### Testing
+
+1. Run the program with the 2 inputs from before and compare the actual output values to the expected results
+
+1. Fix any issues that may arise
