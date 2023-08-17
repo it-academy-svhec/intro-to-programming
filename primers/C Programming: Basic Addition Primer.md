@@ -22,3 +22,11 @@ You will create a C program in Replit that defines a number, adds another number
       return 0;
     }
     ```
+
+### Using Other Arithmetic Operators
+1. Run the program
+1. Let's try changing the operator `+` to each of the following operators. Follow this proces: predict the expected output for the variable `number`, change the operator, run the program, and compare the actual result to the expected result.
+    - Subtraction: `-`
+    - Multiplication: `*`
+    - Division: `/`
+1. Try to figure out why some of your predictions were wrong. What do you think is happening?
