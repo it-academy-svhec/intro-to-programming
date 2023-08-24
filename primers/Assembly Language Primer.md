@@ -3,7 +3,7 @@
 Pep9 is a virtual assembly language created by Pepperdine University to teach their computer science students. You practice writing some basic assembly programs.
 
 ## Pep9 Assembler Installation and Basic Usage
-1. Download the Pep9 assembler from this link: [download link](https://computersystemsbook.com/5th-edition/pep9/).
+1. Download the Pep9 assembler from this link: [download](https://computersystemsbook.com/5th-edition/pep9/).
 
 1. Install the program
 
