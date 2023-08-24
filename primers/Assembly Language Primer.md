@@ -15,13 +15,12 @@ Pep9 is a virtual assembly language created by Pepperdine University to teach th
 ```
 ;A program to output "Hi"
 ;
-         LDBA    0x000D,d    ;Load byte accumulator 'H'
-         STBA    0xFC16,d    ;Store byte accumulator output device
-         LDBA    0x000E,d    ;Load byte accumulator 'i'
-         STBA    0xFC16,d    ;Store byte accumulator output device
-         STOP                ;Stop
-         .ASCII  "Hi"        ;ASCII "Hi" characters
-         .END
-
+LDBA    0x000D,d    ;Load byte accumulator 'H'
+STBA    0xFC16,d    ;Store byte accumulator output device
+LDBA    0x000E,d    ;Load byte accumulator 'i'
+STBA    0xFC16,d    ;Store byte accumulator output device
+STOP                ;Stop
+.ASCII  "Hi"        ;ASCII "Hi" characters
+.END
 ```
 **Source: Stan Warford**
