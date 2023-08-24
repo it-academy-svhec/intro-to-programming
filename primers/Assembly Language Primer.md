@@ -29,3 +29,12 @@ STOP                ;Stop
 .END
 ```
 **Source: Stan Warford**
+
+1. Save the program and call it **Hello World**
+
+1. Click the green play button to run the code
+
+1. Note how the **Output** box is filled in and the **Assembler Listing** shows the hexadecimal object code, the mnemonic (instruction name), and memory address location in hexadecimal.
+
+![image](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/c923e5cb-bdc7-479a-9f29-f00831724abc)
+
