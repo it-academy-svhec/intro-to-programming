@@ -38,3 +38,20 @@ STOP                ;Stop
 
 ![image](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/c923e5cb-bdc7-479a-9f29-f00831724abc)
 
+## Simple Modification
+Let's modify the program to print the letters `IT`.
+
+1. Change the text `Hi` to `IT`
+
+1. Run the program and check the output
+
+## Modify to Print Longer String
+Now, you will create an assembly program to print your first name.
+
+1. Create a new file, save it, and call it **Print first name**
+
+1. Paste the contents from the previous Hello World program
+
+1. Replace the text that is currently being printed with your first name
+
+1. Notice that only the first two letters of your first name print and other strange characters print at the end. This is due to how memory addresses are accessed by the program.
