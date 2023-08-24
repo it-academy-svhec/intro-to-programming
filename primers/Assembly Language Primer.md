@@ -9,6 +9,8 @@ Pep9 is a virtual assembly language created by Pepperdine University to teach th
 
 1. Review the Pep9 interface
 
+The **Accumulator** stores data that the CPU can process later. We can load data to and from the **Accumulator**.
+
 ![pep9 interface](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/cdf8a07d-28da-4838-9f91-c1b344a86788)
 
 
