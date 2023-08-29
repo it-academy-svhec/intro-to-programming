@@ -68,12 +68,12 @@ Now you will write a program to subtract two numbers and display the result.
 
 1. Run the program and confirm that you see `6` as the output
 
-## Storing ASCII Characters in RAM
+## Storing ASCII Character in RAM
 Next, we want to store an ASCII character to a location in memory. First, we load the character into the CPU's accumulator register. Then we store that value into a location in RAM identified by a hexadecimal address.
 
 1. Show the Pep9 virtual memory contents by clicking the button in red below
 
-![image](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/fae6b4cb-1ad4-40f5-b020-c796a69f88cb)
+   ![image](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/fae6b4cb-1ad4-40f5-b020-c796a69f88cb)
 
 1. Create a new Pep9 file and call it **Saving Char to Memory**
 
@@ -88,4 +88,17 @@ Next, we want to store an ASCII character to a location in memory. First, we loa
 
 1. Run the code and note that it doesn't print any output. That is because we simply saved the value to RAM.
 
-![image](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/85a5775b-2a21-43b6-a4ca-c002a5d9ef70)
+   ![image](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/85a5775b-2a21-43b6-a4ca-c002a5d9ef70)
+
+Note the value of `61` hex in the memory dump. This is equivalent to the letter `a` in ASCII. You can also see this value as `0x0061` in the accumulator of the CPU.
+
+Next look at the Assembler Listing in the bottom left. The `Addr` column shows the memory address containing data or an instruction. The first address is `0000` and it contains 24 bits (3 bytes) worth of instructions and data. This spans the addresses `0000`, `0001`, and `0002`. Each hex address is 8 bits or 1 byte. The pattern continues and then the `STOP` and `.END` instructions are both just 1 byte.
+
+The next address, which is not shown, would be `0008` and that is where we stored the ASCII character of `a`. Notice how this data stored is right next to the memory contents that actually represents the program. Modern computer architecture uses the same memory contents to store data and instructions and therefore programs are actually capable of modifying themselves.
+
+## Access ASCII Character from RAM
+Let's modify the previous program to access the ASCII character previously stored. The problem is that every time we add another instruction we have to adjust the memory addresses to account for the changing size. First we will add the new instructions and then update the memory address reference.
+
+1. Add an instruction right before `STOP` to load the ASCII character from RAM into the accumulator
+
+1. Add another instruction after the previous one to store the ASCII character in the accumulator into the output device
