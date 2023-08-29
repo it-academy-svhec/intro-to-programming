@@ -65,3 +65,27 @@ Now you will write a program to subtract two numbers and display the result.
    ```
 
 1. Save the program and name it **Basic Subtraction**
+
+1. Run the program and confirm that you see `6` as the output
+
+## Storing ASCII Characters in RAM
+Next, we want to store an ASCII character to a location in memory. First, we load the character into the CPU's accumulator register. Then we store that value into a location in RAM identified by a hexadecimal address.
+
+1. Show the Pep9 virtual memory contents by clicking the button in red below
+
+![image](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/fae6b4cb-1ad4-40f5-b020-c796a69f88cb)
+
+1. Create a new Pep9 file and call it **Saving Char to Memory**
+
+1. Enter the following source code:
+
+   ```
+   LDBA 0x0061,i    ;Load the ASCII value of a in hex into the accumulator
+   STBA 0x0008,d    ;Store value in the accumulator in memory
+   STOP             ;Stop
+   .END
+   ```
+
+1. Run the code and note that it doesn't print any output. That is because we simply saved the value to RAM.
+
+![image](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/85a5775b-2a21-43b6-a4ca-c002a5d9ef70)
