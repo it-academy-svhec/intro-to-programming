@@ -13,24 +13,24 @@ The **Accumulator** stores data that the CPU can process later. We can load data
 
 ![pep9 interface](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/cdf8a07d-28da-4838-9f91-c1b344a86788)
 
+## Adding Two Numbers
+Let's write a program that adds two numbers and prints the result. Comments are prefixed with a semicolon `;`.
 
-## Hello World Program
 1. Open the Pep/9 program
 
 1. Enter the following source code into the **Source Code** section of the editor
- 
-```
-;A program to output "Hi"
-;
-LDBA    0x000D,d    ;Load byte accumulator 'H'
-STBA    0xFC16,d    ;Store byte accumulator output device
-LDBA    0x000E,d    ;Load byte accumulator 'i'
-STBA    0xFC16,d    ;Store byte accumulator output device
-STOP                ;Stop
-.ASCII  "Hi"        ;ASCII "Hi" characters
-.END
-```
-**Source: Stan Warford**
+
+   ```
+   LDWA 0x0031,i    ;Load the decimal number 1 into the accumulator
+   ADDA 0x0001,i    ;Add 1 to the accumulator
+   STBA 0xFC16,d    ;Store value in accumulator to the output device
+   STOP             ;Stop
+   .END
+   ```
+
+1. Click the green play button to run the code
+ ![image](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/438affa3-86f8-46a2-8843-0c07125f50e2)
+ **Adding two numbers and printing the result in Pep9**
 
 1. Save the program and call it **Hello World**
 
