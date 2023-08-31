@@ -102,3 +102,6 @@ Let's modify the previous program to access the ASCII character previously store
 1. Add an instruction right before `STOP` to load the ASCII character from RAM into the accumulator
 
 1. Add another instruction after the previous one to store the ASCII character in the accumulator into the output device
+
+## Submission
+Submit the three assembly Pep9 files in Canvas.
