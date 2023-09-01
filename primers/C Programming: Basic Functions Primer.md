@@ -63,6 +63,7 @@ Now let's define a custom function to raise a number to the 2nd power (also call
       ```C
       int square(int num);
       ```
+      This function takes one parameter (formal argument) called `num` of the type `int`. It returns an `int`.
 
 1. Now call the function and store it in a variable:
 
