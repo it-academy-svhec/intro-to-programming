@@ -45,7 +45,7 @@ Prerequistes: have a Replit account
         Hello World
 
 ### Naming Programs
-1. Let's compile the program again program but this time give it a friendly name such as `hello_world`. The `-o` parameter allows you to name the compiled binary executable file. Run the following command to create a program called `hello_world`:
+1. Let's compile the program again but this time give it a friendly name such as `hello_world`. The `-o` parameter allows you to name the compiled binary executable file. Run the following command to create a program called `hello_world`:
 
         gcc -o hello_world main.c
 
@@ -66,6 +66,6 @@ Let's modify the program to say hello to you instead of the entire world.
 
 1. Now run the program again. Did you get the expected output to the command line?
 
-1. You should still see the old "Hello World" output. That because, although you changed the source code, you did not change the machine code. You need to recompile your program in order to see the change in the executable program.
+1. You should still see the old "Hello World" output. That is because, although you changed the source code, you did not change the machine code. The CPU is still receiving the old instructions from the previous binary file. You need to recompile your program in order to see the change in the executable program.
 
 1. Recompile the program and rerun it
