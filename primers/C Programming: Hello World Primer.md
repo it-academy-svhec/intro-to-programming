@@ -28,7 +28,7 @@ Prerequistes: have a Replit account
     }
     ```
 
-1. You can invoke the GNU C Compiler by using the `gcc` command in the Replit CLI. This command takes a variety of parameters, which can be shown by running `gcc --help`. Remember, source code has to be compiled to machine code before it can execute on a computer. The compiler generates binary instructions for the computer based on source code written in languages like C and C++.
+1. You can invoke the GNU C Compiler by using the `gcc` command in the Replit CLI. This command takes a variety of parameters, which can be shown by running `gcc --help`. Remember, source code has to be compiled to machine code (language) before it can execute on a computer. As an intermediary step, source code is converted to assembly language often stored in RAM until eventually being translated to binary. Compiler generates binary instructions that can be interpreted by the CPU's specific archiecture (e.g., Intel x86-64 or ARM).
 
     Compile your main.c file into a binary executable program by running the following command:
 
