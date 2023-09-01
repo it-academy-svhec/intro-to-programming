@@ -35,7 +35,7 @@ Now let's define a custom function to raise a number to the 2nd power (also call
       ```C
       #include <stdio.h>
 
-      // Function prototype
+      // Function declaration (prototype)
       int main(void) {
          // Store the result of the function called on the number 10
 
