@@ -24,3 +24,6 @@
       ```
 
 1. Now call the function named `time` and print the result
+
+### Defining Custom Functions
+
