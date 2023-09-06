@@ -69,7 +69,7 @@ Now let's define a custom function to raise a number to the 2nd power (also call
 
       ```C
       int result = 0;
-      int result = square(10);
+      result = square(10);
       ```
 
 1. Next print the number to the console:
