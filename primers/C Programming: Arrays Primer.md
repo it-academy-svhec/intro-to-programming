@@ -30,7 +30,7 @@ Arrays are used to store more than 1 value of the same data type. For example, a
 1. Add the following print statement to print the value of the element at array index `0`, the first element. Place this after storing values in the array.
 
       ```C
-      printf("$d\n", digits[0]);
+      printf("%d\n", digits[0]);
       ```
       `%d` tells C to format the output as a decimal integer. `\n` appends a newline character to the output.
 
