@@ -1,1 +1,5 @@
-# While Loops
+# While Loops Primer
+
+## Basic Usage
+
+
