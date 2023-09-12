@@ -70,3 +70,37 @@ else
 ```
 
 1. Then test the inputs in the table above. Ensure the program behaves as expected.
+
+## Nested If and If-Else Statements
+Now let's try to make the program print a statement to indicate if the number is zero. For now, let's only use `if` or `if-else` statements. Later, you will see a more efficient method.
+
+1. We will nest an `if` statement in the `else` block. Modify your code to match the following.
+
+    ```C
+    if (number > 0)
+      printf("The number is positive\n");
+    else {
+      if (number < 0)
+        printf("The number is negative\n");
+      else
+        printf("The number is zero\n");
+    }
+    ```
+    Notice how we added braces around the else block. This helps logically separate these if-else statements.
+    So the program first checks if the number is positive. If so, print that the number is positive. Otherwise (else), use second if-else statement to check if number is negative. If so, print the appropriate message. Otherwise (else), print that the number is zero.
+
+1. Run your code and test it
+
+1. Finally, try taking away the braces and press Ctrl + S to save the file
+
+1. Replit should automatically reformat your code to the following:
+
+    ```C
+    if (number > 0)
+      printf("The number is positive\n");
+    else if (number < 0)
+      printf("The number is negative\n");
+    else
+      printf("The number is zero\n");
+    ```
+1. This is the format for the next selection structure: `else-if`
