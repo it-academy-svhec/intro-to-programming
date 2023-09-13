@@ -87,7 +87,7 @@ Let's try this approach to search through a list of numbers to determine if the 
     #include <stdio.h>
     
     int main() {
-      int numbers[] = {1,  -3,  0,  10, 48, 100, -21}; // Define array with 7 integer elements
+      int numbers[] = {1, -3, 0, 10, 48, 100, -21}; // Define array with 7 integer elements
     
       int search_number = 0; // Define variable to store the number the user is looking for
       int is_found = 0; // Boolean to determine if the number is found in the array
@@ -112,6 +112,6 @@ Let's try this approach to search through a list of numbers to determine if the 
       return 0;
     }
     ```
-    The array `numbers` is initialized with 7 integer elements. We can access an element in an array with the `[]` operator/notation. For instance, to access the first element (0th), you can write `numbers[0]. The list index starts at 0, so the first element is really at position `0`.
+    The array `numbers` is initialized with 7 integer elements. We can access an element in an array with the `[]` operator/notation. For instance, to access the first element (0th), you can write `numbers[0]. The list index starts at 0, so the first element is really at position `0`. We can use the for loop to go through the array of numbers one-by-one. On each loop iteration, we check if current element in the array matches the number we are searching for.
 
 1. Run the program and experiment searching for existent and non-existing values in the array `numbers`
