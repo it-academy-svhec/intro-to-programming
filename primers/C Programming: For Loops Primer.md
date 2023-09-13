@@ -114,4 +114,4 @@ Let's try this approach to search through a list of numbers to determine if the 
     ```
     The array `numbers` is initialized with 7 integer elements. We can access an element in an array with the `[]` operator/notation. For instance, to access the first element (0th), you can write `numbers[0]`. The list index starts at zero, so the first element is really at position `0`. We can use the for loop to go through the array of numbers one-by-one. On each loop iteration, we check if current element in the array matches the number we are searching for.
 
-1. Run the program and experiment searching for existent and non-existing values in the array `numbers`
+1. Run the program and experiment searching for existent and non-existent values in the array `numbers`
