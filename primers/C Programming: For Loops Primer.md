@@ -77,6 +77,41 @@ User input can be used to affect loops in your code. Recall that `scanf` can be 
 ## Using Loops for Linear Search
 A linear search a search strategy in which you look through every element in a list until you find the correct one. For example, imagine you are looking through a pile of 100 randomly arranged unique books. Your goal is to find one specific book. If you simply look at each book one by one, then this is a linear search.
 
-Let's try this approach to search through a list of numbers to determine if the list contains a specific number. For loops are great for searches if you know how elements are in the list.
+Let's try this approach to search through a list of numbers to determine if the list contains a specific number. For loops are great for searches if you know how many elements are in the list.
 
-1. Enter the following code
+1. Clear your current Repl
+
+1. Copy and paste the following code
+
+    ```C
+    #include <stdio.h>
+    
+    int main() {
+      int numbers[] = {1,  -3,  0,  10, 48, 100, -21}; // Define array with 7 integer elements
+    
+      int search_number = 0; // Define variable to store the number the user is looking for
+      int is_found = 0; // Boolean to determine if the number is found in the array
+    
+      printf("What number would you like to find?\n");
+      scanf("%d", &search_number); // Scan console for user input
+    
+      for (int i = 0; i < 7; i++) {
+        // Check if the number is found
+        if (numbers[i] == search_number) {
+          is_found = 1; // Set to true
+    
+          printf("Found at position %d\n", i); // Tell user where the number is
+          break; // Terminate loop
+        }
+      }
+    
+      // If we did not find the number, print message staging not found
+      if (!is_found)
+        printf("%d not found in array\n", search_number);
+    
+      return 0;
+    }
+    ```
+    The array `numbers` is initialized with 7 integer elements. We can access an element in an array with the `[]` operator/notation. For instance, to access the first element (0th), you can write `numbers[0]. The list index starts at 0, so the first element is really at position `0`.
+
+1. Run the program and experiment searching for existent and non-existing values in the array `numbers`
