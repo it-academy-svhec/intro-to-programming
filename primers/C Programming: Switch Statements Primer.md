@@ -49,13 +49,66 @@ Let's write a program that reads a student's letter grade from the console input
     You failed the class.
     ```
 
-1. The switch statement is missing the `break` statement. This statement terminates the switch statement once one of the conditions are met.
+    Currenlty, the flow of control is `falling through` to the default case. Instead, we need to execute the code in the correct switch case and then terminate the switch statement. The switch statement is missing the `break` statement. This statement terminates the switch statement once one of the conditions are met.
 
 1. Add the following code after each print statement in the `case` and `default` blocks
 
     ```C
     break;
     ```
+
+## Leveraging the Fall-Through Behavior
+Sometimes it is convenient to utilize the fact that control flows through each case until a break statement is executed. This allows us to trigger one case's code for multipel values for the variable that the switch checks.
+
+1. Clear the current Repl and copy/paste the following source code
+
+    ```C
+    #include <stdio.h>
+
+    int main(void) {
+      char grade;
+    
+      scanf("%c", &grade);
+    
+      switch (grade) {
+      case 'A':
+      case 'B':
+      case 'C':
+      case 'D':
+        printf("You passed the class.");
+      default:
+        printf("You failed the class.");
+      }
+    
+      return 0;
+    }
+    ```
+
+1. Run the program and test with grades A, B, C, D, and F
+
+## Refactoring Switch to Ternary Operator
+
+Oftentimes, switch statements can be refactored with other structures such as the `ternary operator`.
+
+1. Refactor your code to use the ternary operator as shown below.
+
+    ```C
+    #include <stdio.h>
+    
+    int main(void) {
+      char grade;
+    
+      scanf("%c", &grade);
+    
+      printf(grade >= 'A' && grade <= 'D' ? "You passed the class." : "You failed the class.");
+    
+      return 0;
+    }
+    ```
+
+1. Run the program and ensure it still behaves the same
+
+With this approach, the ternary operator checks if the grade is A - D (inclusive). If so, it prints "You passed the class.". Else, it prints "You failed the class.".
 
 ## Refactoring the Else-If to Switch
 You will rewrite the else-if ATM menu program using a single switch statement.
@@ -73,3 +126,13 @@ Tips and strategies:
 1. Refactor the else-if ladder (chain) structure to use one switch statement
 
 1. Test that it still behaves the same
+
+## Takeaways
+
+- Switch statements are used to conditionally execute code based on the value of a variable
+- The variable checked is technically treated as an integer (`int` or `char`, which is internally stored as an integer)
+- Use switch statements sparingly
+- Consider using switch statements when there is a long "ladder" of else-if statements
+- The `case x:` is used to denote the block of code that runs when the variable is equal to x
+- Control flows through each case until it hits a `break` statement
+- Each case should contain a break statement for safety
