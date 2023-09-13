@@ -47,3 +47,7 @@ Let's create a while loop that runs infinitely.
         break;
     }
     ```
+
+    This loop runs forever due to the condition being equal to 1. While loops stop terminating for 3 reasons: conditions is equal to zero, break statement executes, or the program throws an error.
+
+1. Be careful when creating loops to make sure there is an `exit condition`, a way in which the condition can be zero
