@@ -10,7 +10,7 @@ Else-if provides a more robust selection structure. It also improves the readabi
    
     **Figure:** [Bank of America ATM User Interface](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FAn-ATM-interface-of-Bank-of-America-showing-some-of-the-offered-services_fig1_294750603&psig=AOvVaw0bxEspOGWNkHMYdnifamC6&ust=1694636422499000&source=images&cd=vfe&opi=89978449&ved=0CBEQjhxqFwoTCJj3peLypYEDFQAAAAAdAAAAABAD)
 
-1. Enter the following source code
+1. Copy and paste the following source code
 
     ```C
     #include <stdio.h>
