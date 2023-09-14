@@ -69,3 +69,64 @@ Now let's create a new function to add to the existing program.
     - Operation: multiply the numbers supplied as arguments and return the product
 
 1. Call the function and print the result
+
+## Recursion
+
+Recursion is useful when you need to run the same function over and over again on slightly different inputs. This process requires a self-referencing function (i.e., the body of the function actually call itself). This is helpful when roughly the same operation needs to be run on a set of values all related to one another.
+
+Imagine trying to search for a file in a set of folders. 
+
+![image](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/7125726e-e569-4f54-93fa-6011a74f60b3)
+
+We can start with the top-level root folder (C:\). Then `recurse`, or call the search function over and over again. Next we would search in the folders contained in the root folder. Then we would search through the nested set of folders and so on. Each time we are still running the same operations to try to find the file but just working with a different folder.
+
+Unfortunately, it is bit complex to implement file searching in C, so instead let's build a program to do some simple math operations.
+
+In statistics, you often encounter the factorial `!` operator such as `3!`. `3! = 3 * 2 * 1`. We can write a recursive function to compute this.
+
+1. Add another function defined below
+
+    ```C
+    int factorial(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+    
+        return n * factorial(n - 1);    // This line call the function itself on the next lowest number
+    }
+    ```
+
+1. Call the `factorial` function on the number `3` and print the result
+
+1. Run the program and confirm that it outputs `6` for `3!`
+
+What is happening?
+
+1st function call is `factorial(3);`
+
+    // Evaluates to false, so it does not return 1
+    if (3 <= 1) {
+        return 1;
+    }
+
+    return 3 * factorial(3 - 1);    // Returns the product of 3 and next recursive function call
+
+2nd function call is `factorial(2);`
+    
+    // Evaluates to false, so it does not return 1
+    if (2 <= 1) {
+        return 1;
+    }
+
+    return 2 * factorial(2 - 1);    // Returns the product of 2 and next recursive function call
+    
+3rd function call is `factorial(1);`
+    
+    // Evaluates to true so it returns 1
+    if (1 <= 1) {
+        return 1;
+    }
+
+    return 1 * factorial(1 - 1);    // Doesn't get called
+
+We can evaluate this backwards. The result of the 3rd call is used in the 2nd call. The result of the 2nd call is used in the 1st call.
