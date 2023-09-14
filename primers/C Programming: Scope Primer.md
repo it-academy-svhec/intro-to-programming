@@ -59,8 +59,10 @@ In the next section we will address a different of solving this issue with globa
 ## Global Scope
 External or global scope means that the variable is accessible anywhere in the C program (*.c) file. This is not generally necessary but can be useful when variables need to be shared by multiple functions including `main`. Global variables are declared outside of code blocks (pairs of braces). This is very useful for situations such as in the previous example where we need to change a variable's value inside a function.
 
-1. Move the line of code that defines `number` one line above the main function. It should be outside teh 
+1. Move the line of code that defines `number` one line above the main function
 
 1. Now change the implementation (body) of the `add` function to add `number` and `global_number`. You do not need to change the parameters/arguments passed into the function.
+
+1. Run the program
 
 You had to pass `number` as an argument to `add` since it was locally or block scoped. On the other hand, you were able to access `global_number` inside the `add` function without passing it as an argument since it is globally scoped.
