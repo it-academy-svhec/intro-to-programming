@@ -72,7 +72,7 @@ Now let's create a new function to add to the existing program.
 
 ## Recursion
 
-Recursion is useful when you need to run the same function over and over again on slightly different inputs. This process requires a self-referencing function (i.e., the body of the function actually call itself). This is helpful when roughly the same operation needs to be run on a set of values all related to one another.
+Recursion is useful when you need to run the same function over and over again on slightly different inputs. This process requires a self-referencing function (i.e., the body of the function actually calls itself). This is helpful when roughly the same operation needs to be run on a set of values all related to one another.
 
 Imagine trying to search for a file in a set of folders. 
 
