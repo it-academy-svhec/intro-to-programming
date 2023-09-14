@@ -64,9 +64,9 @@ Now let's create a new function to add to the existing program.
 
 1. Create a new function with the following requirements. Add the definition under `main` and the declaration above `main`.
 
-- Return type: integer
-- Name: `multiply_numbers`
-- Formal parameters: 2 integers
-- Operation: multiply the numbers supplied as arguments and return the product
+    - Return type: integer
+    - Name: `multiply_numbers`
+    - Formal parameters: 2 integers
+    - Operation: multiply the numbers supplied as arguments and return the product
 
 1. Call the function and print the result
