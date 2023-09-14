@@ -130,3 +130,19 @@ What is happening?
     return 1 * factorial(1 - 1);    // Doesn't get called
 
 We can evaluate this backwards. The result of the 3rd call is used in the 2nd call. The result of the 2nd call is used in the 1st call.
+
+You can also visualize this as the following chain:
+
+`factorial(3) = 3 * factorial(2)`
+
+`factorial(2) = 2 * factorial(1)`
+
+`factorial(1) = 1` reaches a `base case` or basically a number rather than another function call.
+
+Then you can use the result to work backwards.
+
+`factorial(2) = 2 * 1 = 2`
+
+`factorial(3) = 3 * 2 = 6`
+
+So `factorial(3) = 6`.
