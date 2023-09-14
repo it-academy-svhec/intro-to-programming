@@ -58,7 +58,7 @@ Let's write a program that reads a student's letter grade from the console input
     ```
 
 ## Leveraging the Fall-Through Behavior
-Sometimes it is convenient to utilize the fact that control flows through each case until a break statement is executed. This allows us to trigger one case's code for multipel values for the variable that the switch checks.
+Sometimes it is convenient to utilize the fact that control flows through each case until a break statement is executed. This allows us to trigger one case's code for multiple values for the variable that the switch checks.
 
 1. Clear the current Repl and copy/paste the following source code
 
