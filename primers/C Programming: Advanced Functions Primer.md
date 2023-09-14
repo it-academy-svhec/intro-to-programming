@@ -26,13 +26,47 @@ We use functions primarily to make our code reusable and more readable. Develope
     void print_heading(char heading[]);  // Declaration
     
     int main() {
-      print_heading("Intro to Computer Programming");  // Call
+      print_heading("coding");  // Call
     
       return 0;
     }
 
-    // Definition. Formal parameter is `heading` which is a character array (string)
+    // Definition
     void print_heading(char heading[]) { printf("====%s====", heading); } 
     ```
 
-1. Run the code and notice that it prints a heading
+    `void` indicates that this function returns nothing. It does print text but that is not a return value, that simply puts text onto the console.
+    Formal parameter is `char heading[]`, which means a character array named `heading`. A character array is a string.
+
+1. Run the code and notice that it prints the heading
+
+1. Modify the function call to take the actual parameter (argument) `programming` and run the program
+
+## Changing the definition
+
+Let's modify this function to capitalize the first letter of the heading
+
+1. Modify the body of this function to the following.
+
+    ```C
+    heading[0] = heading[0] - 32;
+    
+    printf("====%s====", heading);
+    ```
+
+    Since `heading` is an array of characters, we can use the `[]` operator to access elements in the array. Each element is of the `character` data type. The first element is at position `0` and accessible via `heading[0]`. Then the second is accessible at `heading[1]` and so on. So `heading[0]` allows us to access the first character in the string representing the heading. Then we set it equal to itself minus 32, which shifts the ASCII value from the lowercase version to the uppercase version. See an ASCII chart online to notice that any lowercase letter such as `a` is 32 places higher than any uppercase letter such as `A`.
+
+1. Run the program and check the output
+
+## Using Return Types
+
+Now let's create a new function to add to the existing program.
+
+1. Create a new function with the following requirements. Add the definition under `main` and the declaration above `main`.
+
+- Return type: integer
+- Name: `multiply_numbers`
+- Formal parameters: 2 integers
+- Operation: multiply the numbers supplied as arguments and return the product
+
+1. Call the function and print the result
