@@ -75,9 +75,9 @@ Sometimes it is convenient to utilize the fact that control flows through each c
       case 'B':
       case 'C':
       case 'D':
-        printf("You passed the class.");
+        printf("You passed the class.\n");
       default:
-        printf("You failed the class.");
+        printf("You failed the class.\n");
       }
     
       return 0;
@@ -100,7 +100,7 @@ Oftentimes, switch statements can be refactored with other structures such as th
     
       scanf("%c", &grade);
     
-      printf(grade >= 'A' && grade <= 'D' ? "You passed the class." : "You failed the class.");
+      printf(grade >= 'A' && grade <= 'D' ? "You passed the class.\n" : "You failed the class.\n");
     
       return 0;
     }
