@@ -18,39 +18,48 @@ Block scope means that a variable is only accessible inside of the code block in
     ```
     This code defines an integer variable `number` set to `2`. The variable is locally-scoped, which means that it is only accessible within the body of the `main` function.
 
-1. Now the following code directly above the main function
+1. Now the following code directly above the main function. Recall that `void` means the function does not return a value. This function should simply add 10 `number` and store the result in `number.
 
     ```C
-    int add(int number) {
-      return number + 10;
+    void add() {
+      number += 10;
     }
     ```
 
     You may find that saving the Repl causes the code to be reformated to appear inline. That is ok and this occurs because the function is just a one-liner at this point.
     Note that we are able to place the entire function definition above the main function. The compiler is able read the `add` function before its first use in the `main` function. Functions must be defined or at least declared (i.e., prototype placed outisde of main) before being called.
 
-1. Run your program just make sure you don't have any errors. For now, it will not output anything.
+1. Note that you should see `number` highlighted in red and an error. Read the error message and ignore this for now.
 
 1. Add the following code after the line that defines `number`
 
     ```C
     printf("Before calling add function: %d\n", number);
   
-    add(number);
+    add();
   
     printf("After calling add function: %d\n", number);
     ```
 
-1. Run the program and notice that the value of `number` does not change. That is because the `number` variable declared inside the `main` function is only accessible to `main`, not the `add` function. When you called the add function with `add(number)`, the function gets a copy of the value stored in `number`. When we add 10 to the number inside the `add` function, we are working with another variable called `number` with scope local to the `add` function. In other words, the `number` variable in `main` is not the same as the `number` variable in `add`. They are different and only exist in their respective code blocks.
+1. Run the program and notice, of course, that the program does not compile. This is due to trying to access `number` which is out of scope in the `add` function.
+
+There are two ways we can resolve this issue.
+
+### Solve Using a Function Argument
+The `add` function does not have the access to `number` since `number` is locally scoped to the code block for `main` (i.e., the left and right braces for main). The right and left braces for the `add` function denote another scope entirely that is local to that function. We can pass the `number` variable defined in `main` into the `add` function as an argument.
+
+1. Change the signature of the add function to `add(int number)`. Now the function can accept an argument called `number`.
+
+1. Change the part where you call `add` from `add();`, which has no arguments to, `add(number)`, which has one argument.
+
+1. Note that the value of `number` is still the same before and after we call the `add` function. That is because when `number` is passed into the `add` function we are actually receiving a copy, not the real variable.
+
+In the next section we will address a different of solving this issue with global variables.
 
 ## Global Scope
-External or global scope means that the variable is accessible anywhere in the C program (*.c) file. This is not generally necessary but can be useful when variables need to be shared by multiple functions including `main`. Global variables are declared outside of code blocks (pairs of braces).
+External or global scope means that the variable is accessible anywhere in the C program (*.c) file. This is not generally necessary but can be useful when variables need to be shared by multiple functions including `main`. Global variables are declared outside of code blocks (pairs of braces). This is very useful for situations such as in the previous example where we need to change a variable's value inside a function.
 
-1. Add the following line outside of the main function before the `add` definition
-
-    ```C
-    int global_number = 20;
-    ```
+1. Move the line of code that defines `number` one line above the main function. It should be outside teh 
 
 1. Now change the implementation (body) of the `add` function to add `number` and `global_number`. You do not need to change the parameters/arguments passed into the function.
 
