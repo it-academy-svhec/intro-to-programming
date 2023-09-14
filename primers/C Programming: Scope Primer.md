@@ -27,7 +27,7 @@ Block scope means that a variable is only accessible inside of the code block in
     ```
 
     You may find that saving the Repl causes the code to be reformated to appear inline. That is ok and this occurs because the function is just a one-liner at this point.
-    Note that we are able to place the entire function definition above the main function. The compiler is able read the `add` function before its first use in the `main` function. Functions must be defined or at least declared (i.e., prototype placed outisde of main) before being called.
+    Note that we are able to place the entire function definition above the main function. The compiler is able read the `add` function before its first use in the `main` function. Functions must be defined or at least declared (i.e., prototype placed above of main) before being called.
 
 1. Note that you should see `number` highlighted in red and an error. Read the error message and ignore this for now.
 
