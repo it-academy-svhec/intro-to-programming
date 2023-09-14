@@ -76,8 +76,10 @@ Sometimes it is convenient to utilize the fact that control flows through each c
       case 'C':
       case 'D':
         printf("You passed the class.\n");
+        break;
       default:
         printf("You failed the class.\n");
+        break;
       }
     
       return 0;
@@ -136,3 +138,7 @@ Tips and strategies:
 - The `case x:` is used to denote the block of code that runs when the variable is equal to x
 - Control flows through each case until it hits a `break` statement
 - Each case should contain a break statement for safety
+
+## Submission
+
+You will submit **Refactoring Else-If to Switch Primer**
