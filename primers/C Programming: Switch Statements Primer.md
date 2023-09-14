@@ -139,6 +139,6 @@ Tips and strategies:
 - Control flows through each case until it hits a `break` statement
 - Each case should contain a break statement for safety
 
-## Submission
+## Deliverable
 
 You will submit **Refactoring Else-If to Switch Primer**
