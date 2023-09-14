@@ -20,15 +20,15 @@ Let's write a program that reads a student's letter grade from the console input
     
       switch (grade) {
       case 'A':
-        printf("You passed the class.");
+        printf("You passed the class.\n");
       case 'B':
-        printf("You passed the class.");
+        printf("You passed the class.\n");
       case 'C':
-        printf("You passed the class.");
+        printf("You passed the class.\n");
       case 'D':
-        printf("You passed the class.");
+        printf("You passed the class.\n");
       default:
-        printf("You failed the class.");
+        printf("You failed the class.\n");
       }
     
       return 0;
