@@ -53,7 +53,7 @@ Keywords: `if` and `else`
     |0|The number is not positive|
     |1|The number is positive|
 
-1. Note that you should observed the correct outputs for -1 and 0, however, 1 should have resulted in the following. Unfortunately, that is a contradiction. How can a number be positive and not positive simultaneously. Analyze why this is happening in your code.
+1. Note that you should have observed the correct outputs for -1 and 0, however, 1 should have resulted in the following. Unfortunately, that is a contradiction. How can a number be positive and not positive simultaneously. Analyze why this is happening in your code.
 
     ```
     The number is positive
