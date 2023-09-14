@@ -1,4 +1,3 @@
-===== Under Construction ======
 # Scope Primer
 
 ## Block Scope
