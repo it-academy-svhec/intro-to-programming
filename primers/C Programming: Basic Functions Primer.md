@@ -1,6 +1,9 @@
 ## Basic Functions Primer
+Functions are provided by the C standard library or can be user defined. Functions are very useful since they allow us to reuse logic and share code with our teammates.
 
 ### Using Existing Functions
+C standard library functions are imported to a program with the `#include` preprocessor directive. For example, to import the Standard I/O library, you can add `#include <stdio.h>` at the top of your source file. C standard library files are imported using the `<` and `>` syntax. On the other hand, if you have a user-defined file to import, you can write `#include "my_file.h"` to import those custom functions.
+
 1. Create a new Repl called **Basic Functions**
    
 1. Enter the following source code and run the program
@@ -26,9 +29,9 @@
 1. Now call the function named `time` and print the result
 
 ### Defining Custom Functions
-Now let's define a custom function to raise a number to the 2nd power (also called squaring a number).
+Now let's define a custom function to raise a number to the 2nd power (also called squaring a number). This custom function will only exist inside our source code file. There are more complex steps to sharing the function in other source code files that we will cover later.
 
-1. Use the Repl from the previous section
+1. Use the Repl from the previous section and clear the source code completely
 
 1. Add the following code:
 
