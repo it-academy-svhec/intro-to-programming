@@ -25,7 +25,9 @@ We use functions primarily to make our code reusable and more readable. Develope
     void print_heading(char heading[]);  // Declaration
     
     int main() {
-      print_heading("coding");  // Call
+      char heading[] = "coding";
+
+      print_heading(heading);  // Call
     
       return 0;
     }
@@ -39,7 +41,7 @@ We use functions primarily to make our code reusable and more readable. Develope
 
 1. Run the code and notice that it prints the heading
 
-1. Modify the function call to take the actual parameter (argument) `programming` and run the program
+1. Modify the `heading` character array to store `"programming"` and run the program
 
 ## Changing the definition
 
