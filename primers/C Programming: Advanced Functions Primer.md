@@ -45,7 +45,7 @@ We use functions primarily to make our code reusable and more readable. Develope
 
 ## Changing the definition
 
-Let's modify this function to capitalize the first letter of the heading
+Let's modify the newly defined function to capitalize the first letter of the heading
 
 1. Modify the body of this function to the following.
 
