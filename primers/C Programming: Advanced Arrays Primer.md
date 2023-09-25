@@ -39,10 +39,19 @@ Functions can be defined and called with or without arguments (actual values pas
    int add_by_copy(int num);
    void add_by_reference(int *num);
    ```
+   
+1. Add the following function definitions below (not inside the braces) the `main` function
 
+   ```C
+   int add_by_copy(int num) { return num++; }
+   void add_by_reference(int *num) { (*num)++; }
+   ```
 
-   // Needs to return modified copy of num
-int add_by_copy(int num) { return num++; }
+### Defining Arrays
 
-// Does not need return value since num is passed by address
-void add_by_reference(int *num) { (*num)++; }
+### Storing and Accessing Array Elements
+store/access; indices
+
+### Looping Over Arrays
+
+### Using Arrays with Functions
