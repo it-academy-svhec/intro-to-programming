@@ -63,6 +63,7 @@ However, they may be declared without one, if there is an explicit initializatio
 ```C
 // has initializer list, length specifier is not required.
 int numbers[4] = {11,22,33,44};
+int numbers[] = {11,22,33,44};
 ```
 
 ### Storing and Accessing Array Elements
@@ -74,7 +75,10 @@ An index is simply the location of an individual cell inside the array.
 
 ```C
 // example data
+
 int numbers[4] = {65, 43, 51, 87};
+// or
+int numbers[] = {65, 43, 51, 87};
 ```
 
 ```C
