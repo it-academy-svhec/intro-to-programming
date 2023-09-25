@@ -48,10 +48,110 @@ Functions can be defined and called with or without arguments (actual values pas
    ```
 
 ### Defining Arrays
+```C
+/// Array Declaration Syntax
+//  <type> <idenifier> [<size>]
+```
+
+Arrays are usually declared with a specified length.
+```C
+// no initializer list, length specifier required!
+int numbers[4]; // contains default values {0,0,0,0}
+```
+
+However, they may be declared without one, if there is an explicit initialization.
+```C
+// has initializer list, length specifier is not required.
+int numbers[4] = {11,22,33,44};
+```
 
 ### Storing and Accessing Array Elements
-store/access; indices
+Arrays are indexable containers, meaning they hold 'cells' of data. <br>
+These 'cells' are referred to as elements.
+
+An element of an array can be accessed by something called an 'index'. <br>
+An index is simply the location of an individual cell inside the array.
+
+```C
+// example data
+int numbers[4] = {65, 43, 51, 87};
+```
+
+```C
+// Hard-coded Indexing
+
+// easily readable, index values are known
+int element2 = numbers[1]; // 43
+int element3 = numbers[2]; // 51
+```
+
+```C
+// Variable Indexing
+
+// some_index_value == ??
+// index value is unknown; may have been provided elsewhere in the code
+int elementA = numbers[some_index_value]; // value at index
+int elementB = numbers[some_index_value + 1]; // value at index + 1
+```
 
 ### Looping Over Arrays
+```C
+// Array Accessing (Reading data)
+int sum = 0; // variable to hold sum of numbers
+for (int i = 0; i < sizeof(numbers); i++) {
+    // accessing element at 'i'
+    int current_number = numbers[i];
+    
+    // add the current number to the total
+    sum += selected_number;
+}
+```
+
+```C
+// Array Storage (Writing data)
+int users_number = 0;
+for (int i = 0; i < sizeof(numbers); i++) {
+    // get number from user
+    scanf("%d", &users_number);
+
+    // assign new value to element 'i'
+    numbers[i] = users_number;
+}
+```
 
 ### Using Arrays with Functions
+```C
+// takes an array of numbers and modifies it
+// adds one to each existing element
+
+// ex.  {1,3,5,7} -> {2,4,6,8}
+
+void array_add_one(int length, int numbers[]) {
+    for (int i = 0; i < length; i++) {
+        numbers[i] += 1;
+    }
+    // returns nothing
+}
+```
+
+```C
+// takes an array of numbers and a target value
+// loops through array to hopefully find the target
+
+// ex.  numbers={4,6,8,10}
+//      target=11 -> returns 0
+//      target=6 -> returns 1
+
+int array_find_x(int length, int numbers[], int target) {
+    for (int i = 0; i < length; i++) {
+        int current_number = numbers[i];
+        if (current_number == target) {
+            // found target
+            return 1;
+        }
+        // target not found, continuing...
+    }
+    // failed to find target
+    return 0;
+}
+```
