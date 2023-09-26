@@ -142,6 +142,8 @@ int elementB = numbers[some_index_value + 1]; // value at index + 1
 
 Now imagine you have 10,000 users. I seriously doubt you would want to write a print statement 10,000 times. This approach is bad for at least two reasons: code duplication and scalability. In the next section, you will implement a more efficient program to print user IDs for an arbitrary number of users.
 
+1. Now to remove the hard-coded indices, implement a for loop to loop through each user ID
+
 1. Add the following lines inside the for loop body below the print statement
 
    ```C
