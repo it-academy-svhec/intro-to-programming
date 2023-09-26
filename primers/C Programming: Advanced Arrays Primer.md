@@ -39,13 +39,27 @@ Functions can be defined and called with or without arguments (actual values pas
    int add_by_copy(int num);
    void add_by_reference(int *num);
    ```
-   
+
 1. Add the following function definitions below (not inside the braces) the `main` function
 
    ```C
    int add_by_copy(int num) { return num++; }
    void add_by_reference(int *num) { (*num)++; }
    ```
+
+1. Add the following code after the second print statement
+
+    ```C
+    printf("Before | Value of my_number: %d\n", my_number);
+    
+    add_by_reference(my_pointer);
+    add_by_copy(my_number);
+    
+    printf("After | Value of my_number: %d\n", my_number);
+    ```
+    The `add_by_reference` function receives `my_pointer` as an argument by reference, which is set to the memory address of `my_number`. This allows the function to modify the variable even though it is declared in a different scope. On the other hand, the `add_by_copy` function receives `my_number` as an argument by value (copy). This means that modifications only affect the locally-scoped copy inside the function body.
+
+1. Run the program and notice how `my_number` is only incremented once despite calling `add_by_reference` and `add_by_copy`
 
 ### Defining Arrays
 ```C
@@ -65,6 +79,25 @@ However, they may be declared without one, if there is an explicit initializatio
 int numbers[4] = {11,22,33,44};
 int numbers[] = {11,22,33,44};
 ```
+
+1. Clear the current Repl and enter the following source code
+
+    ```C
+    #include <stdio.h>
+    
+    int main(void) {
+      // Array
+        
+      return 0;
+    }
+    ```
+
+1. Using the examples above, create an array with the following requirements
+    - **Identifier**: `user_ids`
+    - **Size**: `10`
+    - **Initial values**: `1000`, `1001`, `1002`, and `1003`
+  
+1. Run your program to ensure it is error free
 
 ### Storing and Accessing Array Elements
 Arrays are indexable containers, meaning they hold 'cells' of data. <br>
@@ -98,13 +131,43 @@ int elementA = numbers[some_index_value]; // value at index
 int elementB = numbers[some_index_value + 1]; // value at index + 1
 ```
 
+1. Write a series of statements to print the values from the `user_ids` using hard-coded indexing
+
+1. Run your program and ensure the output is similar to the following
+
+        User ID: 1000
+        User ID: 1001
+        User ID: 1002
+        User ID: 1003
+
+Now imagine you have 10,000 users. I seriously doubt you would want to write a print statement 10,000 times. This approach is bad for at least two reasons: code duplication and scalability. In the next section, you will implement a more efficient program to print user IDs for an arbitrary number of users.
+
+1. Add the following lines inside the for loop body below the print statement
+
+   ```C
+   if (user_ids[index] == 0) {
+     char option;
+     printf("Do you want to assign the next user ID? (Y or N)\n");
+     scanf("%c", &option);
+     getchar();
+    
+     if (option == 'Y') {
+       user_ids[index] = user_ids[index == 0 ? 0 : index - 1] + 1;
+       printf("User ID: %d assigned\n", user_ids[index]);
+     }
+   }
+   ```
+
+1. Run the program
+
 ### Looping Over Arrays
 ```C
-// Array Accessing (Reading data)
+// Array Access (Reading data)
 int sum = 0; // variable to hold sum of numbers
-for (int i = 0; i < sizeof(numbers); i++) {
-    // accessing element at 'i'
-    int current_number = numbers[i];
+const int SIZE = 10; // variable to hold size of the array; i.e., the number of elements
+for (int index = 0; index < SIZE; index++) {
+    // accessing element at 'index'
+    int current_number = numbers[index];
     
     // add the current number to the total
     sum += selected_number;
@@ -114,14 +177,34 @@ for (int i = 0; i < sizeof(numbers); i++) {
 ```C
 // Array Storage (Writing data)
 int users_number = 0;
-for (int i = 0; i < sizeof(numbers); i++) {
+const int SIZE = 10;
+for (int index = 0; index < SIZE; index++) {
     // get number from user
     scanf("%d", &users_number);
 
-    // assign new value to element 'i'
-    numbers[i] = users_number;
+    // assign new value to element 'index'
+    numbers[index] = users_number;
 }
 ```
+
+1. Using the examples above, create a for loop that iterates for each element in the `user_ids` array. Pay close attention to the size of the array.
+
+1. Next, add a print statement inside the for loop body to print the user ID for the current `index` (position).
+
+1. Run your program and ensure the output is similar to the following
+
+        User ID: 1000
+        User ID: 1001
+        User ID: 1002
+        User ID: 1003
+        User ID: 0
+        User ID: 0
+        User ID: 0
+        User ID: 0
+        User ID: 0
+        User ID: 0
+
+Note that the indices (plural for index) that were not explicilty initialized to a user ID are set to 0.
 
 ### Using Arrays with Functions
 ```C
