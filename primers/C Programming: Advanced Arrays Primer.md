@@ -142,26 +142,6 @@ int elementB = numbers[some_index_value + 1]; // value at index + 1
 
 Now imagine you have 10,000 users. I seriously doubt you would want to write a print statement 10,000 times. This approach is bad for at least two reasons: code duplication and scalability. In the next section, you will implement a more efficient program to print user IDs for an arbitrary number of users.
 
-1. Now to remove the hard-coded indices, implement a for loop to loop through each user ID
-
-1. Add the following lines inside the for loop body below the print statement
-
-   ```C
-   if (user_ids[index] == 0) {
-     char option;
-     printf("Do you want to assign the next user ID? (Y or N)\n");
-     scanf("%c", &option);
-     getchar();
-    
-     if (option == 'Y') {
-       user_ids[index] = user_ids[index == 0 ? 0 : index - 1] + 1;
-       printf("User ID: %d assigned\n", user_ids[index]);
-     }
-   }
-   ```
-
-1. Run the program
-
 ### Looping Over Arrays
 ```C
 // Array Access (Reading data)
@@ -206,7 +186,25 @@ for (int index = 0; index < SIZE; index++) {
         User ID: 0
         User ID: 0
 
-Note that the indices (plural for index) that were not explicilty initialized to a user ID are set to 0.
+        Note that the indices (plural for index) that were not explicilty initialized to a user ID are set to 0.
+
+1. Add the following lines inside the for loop body below the print statement
+
+   ```C
+   if (user_ids[index] == 0) {
+     char option;
+     printf("Do you want to assign the next user ID? (Y or N)\n");
+     scanf("%c", &option);
+     getchar();
+    
+     if (option == 'Y') {
+       user_ids[index] = user_ids[index == 0 ? 0 : index - 1] + 1;
+       printf("User ID: %d assigned\n", user_ids[index]);
+     }
+   }
+   ```
+
+1. Run the program and test it by assigning user IDs
 
 ### Using Arrays with Functions
 ```C
