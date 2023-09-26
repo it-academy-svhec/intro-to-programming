@@ -242,3 +242,23 @@ int array_find_x(int length, int numbers[], int target) {
     return 0;
 }
 ```
+
+1. Add a function to print the user IDs with the following requirements. Use the first example above as starter code.
+
+    - **Name**: `print_user_ids`
+    - **Parameters**: `length` of type integer and `user_ids` of type integer array
+    - **Return type**: nothing - `void`
+
+1. Call the function in `main` after the for loop
+
+1. Run the program and assign the remaining user IDs. You should see the list of all user IDs after due to the function you created.
+
+1. Encapsulate the logic for assigning the user IDs into a function. This includes entire `for` loop.
+
+    - **Name**: `assign_user_ids`
+    - **Parameters**: `length` of type integer and `user_ids` of type integer array
+    - **Return type**: nothing - `void`
+  
+1. Call the function in `main` before the `print_user_ids` call
+
+1. Run the program to ensure that the output is still correct
