@@ -1,5 +1,5 @@
 # Structs Primer
-Structures, or `structs` for short, are used to store many variables and encapsulate data in one place. This allows us to perform operations on an abstract data type (ADT) rather than always working with primitives. ADTs provide very close models of the real world and allow us to focus on the design (high-level understanding) rather than the implementation (nuts and bolts).
+Structures, or `structs` for short, are used to store many variables and encapsulate data in one place. This allows us to perform operations on an abstract data type (ADT) rather than always working with primitives. ADTs provide very close models of the real world and allow us to focus on the design (high-level understanding) rather than the implementation (nuts and bolts). If you would like to read more about ADTs, check out some course material from [ODU](https://www.cs.odu.edu/~zeil/cs361/latest/Public/adts/index.html),
 
 **Keyword**: `struct`
 
