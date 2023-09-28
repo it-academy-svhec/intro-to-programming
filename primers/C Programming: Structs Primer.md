@@ -8,7 +8,7 @@ Structures, or `structs` for short, are used to store many variables and encapsu
 - Member access (dot) operator: denoted by a period (`.`) and used to access member variables
 
 ## Defining and Creating Structs
-Structs are defined outside of any function. Although the definition of a struct isn't really a statement, it does end with a semicolon (`;`).
+Structs are defined outside of any function. Although the definition of a struct isn't really a statement, it does end with a semicolon (`;`). For simplicity, we will model start and end times as hours, minutes, and seconds. For example, if it is 1:30:40 AM, we would store `1 hour`, `30 minutes`, and `40 seconds`. This is a simplistic model that is useful to demonstrate the power of structs for modeling complex data types.
 
 1. Create a Repl called **Structs Primer**
 
@@ -125,3 +125,95 @@ You can nest structs inside other structs. For example, we can represent the abs
 1. Run your program and ensure it is error free
 
 ## Arrays of Structs
+Next, you will finish implementing a program that creates events with start and end times. Most of the program is complete including the following functions:
+
+| Function Name | Purpose |
+|-|-|
+|`print_time`|Print the hours, minutes, and seconds for a time struct|
+|`print_event`|Print a list of events and corresponding start and end times|
+|`print_diff_time`|Print the time elapsed between two times|
+|`create_time`|Prompt a user for a new time and return a Time struct|
+|`create_event`|Prompt a user for a new event and return an Event struct|
+
+Although this is a complex program, you only have to implement three pieces of functionality:
+
+- **TODO #1:** Declare an array of Event structs. It should be capable of storing a number of events equal to the integer `MAX_EVENTS`
+- **TODO #2:** Write a for loop to create a number of events equal to the integer `MAX_EVENTS`. Within each loop iteration, you shoudl store a new event in the array.
+- **TODO #3:** Print the event referrenced by the current loop index
+
+1. Clear the Repl
+
+1. Copy and paste the code from [Structs Primer Starter Code](https://replit.com/@JacobCook2/Structs-Primer-Starter-Code#main.c)
+
+1. Run the program. Notice that the events are empty for now
+
+1. Implement the code required to complete the todo tasks
+
+1. Run your code and you be able to run through it similar to the following example with these select outputs
+
+        Please create 3 event(s)
+        
+        Create the start time
+        Enter the hours(s):1
+        Enter the minutes(s):0
+        Enter the seconds(s):0
+        
+        Create the end time
+        Enter the hours(s):2
+        Enter the minutes(s):30
+        Enter the seconds(s):30
+        
+        
+        Create the start time
+        Enter the hours(s):3
+        Enter the minutes(s):45
+        Enter the seconds(s):0
+        
+        Create the end time
+        Enter the hours(s):5
+        Enter the minutes(s):0
+        Enter the seconds(s):0
+        
+        
+        Create the start time
+        Enter the hours(s):6
+        Enter the minutes(s):30
+        Enter the seconds(s):0
+        
+        Create the end time
+        Enter the hours(s):8
+        Enter the minutes(s):45
+        Enter the seconds(s):30
+        
+        Showing Events:
+        Event[0]:
+        Start time: 1h 0m 0s
+        End time: 2h 30m 30s
+        Duration: 1h 30m 30s
+        
+        Event[1]:
+        Start time: 3h 45m 0s
+        End time: 5h 0m 0s
+        Duration: 2h -45m 0s
+        
+        Event[2]:
+        Start time: 6h 30m 0s
+        End time: 8h 45m 30s
+        Duration: 2h 15m 30s
+
+## Optional Tasks
+The program currently only supports storing events such that the start time minutes and seconds are less than the end time and minutes.
+
+You can identify the flaw in this program by entering the event below:
+
+Event #1
+- start time: 5:45:45
+- end_time: 6:30:30
+
+This results in the duration of 1h -15m -15s
+
+This is obviously not what we want to happen.
+
+1. Fix the implementation of `print_diff_time` to print the correct duration even in situation outlined above
+
+1. Test your code with inputs for which the previous program failed to compute the correct duration
