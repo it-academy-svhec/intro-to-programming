@@ -39,7 +39,7 @@ Note that this approach can be condensed using the next programming construct.
 ## If-Else Statements
 1. Refactor the previous code to use an if-else statement
 
-1. Instead of hardcoding the value for the variable `available`, prompt the user for a boolean value. You will need to use the `bool()` method to cast the `str` value from the user to the `bool` data type.
+1. Instead of hardcoding the value for the variable `available`, prompt the user for a string value. Compare the user's input to the string "True" in the if condition.
 
 1. Run the program. You should now be able to enter the name and availability for an item and then view the results printed to the console.
 
