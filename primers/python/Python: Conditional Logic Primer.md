@@ -3,7 +3,7 @@
 ## If Statements
 If statements are the most basic way to make decisions in Python.
 
-1. Create new Repl called **Conditional Logic Primers**
+1. Create new Repl called **Conditional Logic Primer**
 1. Enter the following source code:
 
     ```python
