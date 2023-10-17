@@ -24,26 +24,37 @@ While loops are very useful for running the main control loop in a program. They
 For loops are useful when the number of iterations is known upfront. For example, if you have a list of 10 strings and want to display all of them, a for loop is the best choice. You will simply set up the for loop to run 10 times and on each iteration print the corresponding element in the list.
 
 1. Enter the following line of code above the `name` variable declaration
-
-  ```python
-  statuses = ["available", "unavailable", "sold", "on-hold"]
-  ```
+  
+    ```python
+    statuses = ["available", "unavailable", "sold", "on-hold"]
+    ```
 
 1. Now, make the following changes below
 
-  Old code
-  ```python
-  status = input("Enter the item status (available, unavailable, sold, or on-hold):\n")
-  ```
-
-  New code
-  ```python
-  print("Enter the item status\n")
-  print("Choose from the following options:")
-  for status in statuses:
-      print("status")
-  status = input()
-  ```
-  This code prints all defined item statuses. Then it collects the user input and stores it in the `status` variable.
+    Old code
+    ```python
+    status = input("Enter the item status (available, unavailable, sold, or on-hold):\n")
+    ```
+  
+    New code
+    ```python
+    print("Enter the item status\n")
+    print("Choose from the following options:")
+    
+    for i in range(4):
+        print(statuses[i])
+    
+    status = input()
+    ```
+    This code prints all defined item statuses. Then it collects the user input and stores it in the `status` variable.
   
 1. Run the program
+
+1. Now refactor the `for` loop using the following form
+
+  ```python
+  for status in statuses:
+      print(status)
+  ```
+
+1. Run the program and notice that is functions the same way but is much easier to read
