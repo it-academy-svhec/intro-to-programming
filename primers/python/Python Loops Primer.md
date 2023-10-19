@@ -8,15 +8,41 @@ While loops are very useful for running the main control loop in a program. They
 
 1. Place the statement for getting the item status inside the following loop
 
-  ```python
-  valid_status = False
-  while not valid_status:
-      # Replace with line to get status from user
-      if status == "available" or # Finish the code:
-        valid_status = True
+    ```python
+    valid_status = False
+    while not valid_status:
+        # Replace with line to get status from user
+        if status == "available" or # Finish the code:
+          valid_status = True
+  
+    # Replace with the existing code from the conditional logic primer
+    ```
 
-  # Replace with the existing code from the conditional logic primer
-  ```
+1. Your program should look like the following code
+
+    ```python
+    name = input("Enter the item name:\n")
+    
+    valid_status = False
+    
+    while not valid_status:
+      status = input(
+          "Enter the item status (available, unavailable, sold, or on-hold):\n")
+    
+      if status == "available" or status == "unavailable" or status == "sold" or status == "on-hold":
+        valid_status = True
+    
+      if status == "available":
+        print(name, "is available")
+      elif status == "unavailable":
+        print(name, "is unavailable")
+      elif status == "sold":
+        print(name, "is sold")
+      elif status == "on-hold":
+        print(name, "is on hold")
+      else:
+        print(name, "does not have a valid status")
+    ```
 
 1. Finish the missing part of the if statement inside the while loop. The `valid_status` variable should only be set to `True` if the status entered is one of the valid statuses used later in the program.
 
