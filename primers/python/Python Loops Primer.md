@@ -42,7 +42,7 @@ While loops are very useful for running the main control loop in a program. They
         print(name, "is on hold")
       else:
         print(name, "does not have a valid status")
-    ```
+      ```
 
 1. Finish the missing part of the if statement inside the while loop. The `valid_status` variable should only be set to `True` if the status entered is one of the valid statuses used later in the program.
 
