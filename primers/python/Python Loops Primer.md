@@ -57,4 +57,4 @@ For loops are useful when the number of iterations is known upfront. For example
         print(status)
     ```
 
-1. Run the program and notice that is functions the same way but is much easier to read
+1. Run the program and notice that it functions the same way but is much easier to read
