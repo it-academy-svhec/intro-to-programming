@@ -52,9 +52,9 @@ For loops are useful when the number of iterations is known upfront. For example
 
 1. Now refactor the `for` loop using the following form
 
-  ```python
-  for status in statuses:
-      print(status)
-  ```
+    ```python
+    for status in statuses:
+        print(status)
+    ```
 
 1. Run the program and notice that is functions the same way but is much easier to read
