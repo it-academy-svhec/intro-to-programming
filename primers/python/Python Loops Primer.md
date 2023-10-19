@@ -6,12 +6,12 @@ While loops are very useful for running the main control loop in a program. They
 
 1. Fork the Repl from the **Conditional Logic Primer** and call the new Repl **Loops Primer**
 
-1. Place the statement for getting the item status inside the following loop
+1. Place the existing code conditional logic primer inside the following loop
 
   ```python
   valid_status = False
   while not valid_status:
-      # Replace with line to get status from user
+      # Replace with existing code from conditional logic primer
       if status == "available" or # Finish the code:
         valid_status = True
   ```
