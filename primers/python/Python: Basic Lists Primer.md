@@ -14,7 +14,7 @@ In fact, you would need 30 individual variables. Lists are very efficient becaus
 ## Creating Lists
 First, you need to know how to define a new list. New lists can be declared with default values or they can be empty. Assume that we need to store users' first names.
 
-1. Create a new Repl called **Lists Primer**
+1. Create a new Repl called **Basic Lists Primer**
 
 1. Create an empty list named `users` by entering the following code
 
