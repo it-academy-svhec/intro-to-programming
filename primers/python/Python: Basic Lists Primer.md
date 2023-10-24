@@ -1,4 +1,4 @@
-## Lists Primer
+# Basic Lists Primer
 Lists are multi-value variables in Python used to store many different values. They can store values of different data types unlike compiled languages such as C, C++, and Java. These data structures are essential to prevent repetitive declarations of similar variables. For example, if you have 10 user accounts each with a first name, last name, and phone number, it would be very tedious to store these values using variables.
 In fact, you would need 30 individual variables. Lists are very efficient because you store many values and reference the list as a single variable. 
 
