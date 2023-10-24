@@ -73,9 +73,9 @@ Next, we need to modify the elements in the users list.
 
 1. Write a line of code to print the last element of the list
 
-## Updating and Deleting Elements
+## Deleting Elements
 
-We often need to update or delete elements in lists. You can use the `del` instruction or the `remove` list method to acheive this goal.
+We often need to delete elements in lists. You can use the `del` instruction or the `remove` list method to acheive this goal.
 
 1. Remove the first element in the list by adding the following line of code after the print statements
 
@@ -84,5 +84,63 @@ We often need to update or delete elements in lists. You can use the `del` instr
     print()
     print(users[0])
     ```
+    `del` is a global instruction that deletes the element in a specified list at the given index.
 
 1. Run the program again and notice how the first element printed by index `0` is the element that was previously at position `1`
+
+1. Alternatively, you can delete an element with the `remove` method. Add the following under the last print statement to remove the first element equal to `Ada`.
+
+   ```python
+   users.remove("Ada")
+   print()
+   print(users)
+   ```
+   The `remove` method checks for an element equal to the argument and deletes the first occurrence of it from the list.
+
+## Updating Elements
+
+The next major task for lists is updating existing elements.
+
+1. Update the element that contains your first name using the following code. Place it at the end of the current program. Replace `<int>` with the index of your first name in the list. Replace the empty string with your first and last name. E.g., "Linus Torvalds".
+
+   ```python
+   users[<int>] = ""
+   print(users[<int>])
+   ```
+
+1. Run the program and you should see your first and last names printed out
+
+1. You can also use the `index` method to find the index of a specific element in a list. Refactor the code above to update your name using the following syntax. Replace the empty string with your first name.
+
+   ```python
+   index = users.index("")
+   print(f"Name at index {index}")
+   users[index]
+   print(users[index])
+   ```
+
+1. Run your program to ensure it works as expected
+
+## Looping Through Lists
+
+You often have to access all or many of the elements in a list and it is too tedious to use the index in square for element on a single line. It is more efficient to use loops to iterate through a list.
+
+1. Replace the block of 5 print statements with the following for loop
+
+    ```python
+    for i in range(len(users)):
+        print(users[i])
+    ```
+    Note that `i` is a variable that gets the value from the `range` function on each iteration. The `len` function computes the length of the list called `users`. So really this is the same as `range(5)`, which generates the number sequence 0, 1, 2, 3, and 4. But writing it this way means that we are not hardcoding the length of the list and it can change freely as new elements are added. This leads to dynamic behavior within our code.
+
+1. Run the program and it should behave in the same way
+
+1. Refactor the for loop to use an even cleaner syntax
+
+    ```python
+    for user in users:
+        print(user)
+    ```
+    Now, the details of the index are hidden from us and Python takes care of the low-level details. On each loop iteration, we simply get a user variable set to the element at the current index in the `users` list. Basically, we loop over each user in the list.
+
+1. Run the program and ensure it works as expected
