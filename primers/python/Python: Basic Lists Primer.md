@@ -125,7 +125,7 @@ The next major task for lists is updating existing elements.
 
 You often have to access all or many of the elements in a list and it is too tedious to use the index in square for element on a single line. It is more efficient to use loops to iterate through a list.
 
-1. Replace the block of 5 print statements with the following for loop
+1. Replace the block of 3 print statements at the top with the following for loop
 
     ```python
     for i in range(len(users)):
