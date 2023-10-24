@@ -110,12 +110,12 @@ The next major task for lists is updating existing elements.
 
 1. Run the program and you should see your first and last names printed out
 
-1. You can also use the `index` method to find the index of a specific element in a list. Refactor the code above to update your name using the following syntax. Replace the empty string with your first name.
+1. You can also use the `index` method to find the index of a specific element in a list. Refactor the code above to update your name using the following syntax. Replace the first empty string with your first name. Replace the second empty string with your first and last names like before.
 
    ```python
    index = users.index("")
    print(f"Name at index {index}")
-   users[index]
+   users[index] = ""
    print(users[index])
    ```
 
