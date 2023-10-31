@@ -1,5 +1,5 @@
 def create_user_account(username, password="820BruceStreet"):
-    print(f"Created user {username} with password "{password}")
+    print(f'Created user {username} with password "{password}"')
 
 
 username = input("Enter a username: ")
