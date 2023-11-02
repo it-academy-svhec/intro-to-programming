@@ -22,11 +22,6 @@ def print_items(items):
         item[1] += calculate_tax(item[1], VA_SALES_TAX)
         print(f"Name: {item[0]} | Price: {item[1]}")
 
-
-price = 100
-
-subtotal = price + calculate_tax(price, VA_SALES_TAX)
-
 items = []
 
 create_items(items)

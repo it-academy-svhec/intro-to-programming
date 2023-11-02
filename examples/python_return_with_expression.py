@@ -2,8 +2,8 @@ def find_element(elements, target):
     for element in elements:
         if element == target:
             return True
-        else:
-            return False
+    else:
+        return False
 
 
 elements = [1, 2, 3, 4, 5, 6, 7, 8, 9]
