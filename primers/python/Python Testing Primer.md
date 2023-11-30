@@ -125,3 +125,27 @@ There are many different tools for creating and running automated tests in Pytho
 1. Run the tests again. The first test should pass, but the second should fail. Testing is all about finding bugs. In this case, the bug is that users can be created without a username or password.
 
 1. Refactor the `create` function in the `user` module to make this test pass, which would indicate that the bug is most likely fixed
+
+## Writing More Tests
+
+Try writing tests for ensure that the `all` function works as expected.
+
+- It is difficult to test functions when they produce console output via `print` statements. You will need to refactor the function to return the text that should be printed as a string rather than actually printing the text.
+- You will need to make some changes to the `main.py` file as well since the function will not print the output.
+- Arrange: create a `users` list and then add a user to it.
+- Act: get the string of all users in the `users` list
+- Assert: check if the user you added is in the string output returned by the `all` function
+
+## Optional - Configure VS Code for Python Testing
+
+1. Click the Testing option on the left nav bar in VS Code
+
+1. Click Configure Python Tests
+
+1. Select the test framework. In this primer, we used the Pytest framework
+
+1. Select the directory that contains the tests. This will create `.vscode/settings.json` file in the root that contains the configuration for testing.
+
+1. In the Test Explorer, you will see play buttons next to each test. Click the play button at the top level to run all tests or the button next to each to run them individually.
+
+1. Navigate to the a test file and notice that there is a play button next to each test function signature (name and parameters)
