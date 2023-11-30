@@ -34,7 +34,7 @@ In order to write unit tests, we need to organize our code into modules, which a
            "password": password
        }
 
-   users.append(user)
+       users.append(user)
    ```
 
 1. Add the following function to view all users
