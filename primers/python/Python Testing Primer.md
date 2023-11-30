@@ -4,7 +4,7 @@
 
 Testing is a fundamental aspect of the software development process.
 This can be done manually or automatically. As developers, we often prefer automated testing because this is faster and more efficient.
-Not all aspects of a program can be automatically test, but most can. Test suites are created that contain individual tests to assert that the code behaves as expected.
+Not all aspects of a program can be automatically tested, but most can. Test suites are created that contain individual tests to assert that the code behaves as expected.
 
 There are two primary types of tests: unit tests and integration tests. Unit tests check the behavior of small and cohesive building blocks in your code.
 For instance, you could write a unit test to ensure that a function returns a specific results given specific inputs. Integration tests check the behavior of more complex subsystems in the application, such as a user authentication module. For example, we could write a test to make sure that a user can log in and then is presented with welcome text. Then we could check that they can perform certain actions. This test will involve code from many different units in the system.
@@ -116,7 +116,7 @@ There are many different tools for creating and running automated tests in Pytho
 
    **Line-by-line explanation**
 
-   First we import the `user` module into the test file. Then we define a test function called `test_can_create_user`. This function is called every time we run our test suite. On the arrange step, we define an empty list called `users` and then choose a username and password for the test user. Next, we act by calling the `create` function in the `user` module. Finally, we assert by using the `assert` keyword to see if the `the_user` dictionary is in the `users` list. The `assert` keyword raises and exception if the expression to the right (`the_user in users`) evaluates to `False`. Otherwise, it is `True` and the test passes.
+   First we import the `user` module into the test file. Then we define a test function called `test_can_create_user`. This function is called every time we run our test suite. On the arrange step, we define an empty list called `users` and then choose a username and password for the test user. Next, we act by calling the `create` function in the `user` module. Finally, we assert by using the `assert` keyword to see if the `the_user` dictionary is in the `users` list. The `assert` keyword raises an exception if the expression to the right (`the_user in users`) evaluates to `False`. Otherwise, it is `True` and the test passes.
 
 1. Run the `pytest -rA` command in the VS Code integrated Terminal to run launch the tests. The parameters instruct Pytest to show the result of each test. The test should pass.
 
