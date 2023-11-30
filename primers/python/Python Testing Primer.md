@@ -51,7 +51,7 @@ In order to write unit tests, we need to organize our code into modules, which a
 1. Add the line below to `main.py`. This will import the `user.py` module into `main.py`.
 
    ```python
-   import user.py
+   import user
    ```
 
 1. Define an empty list called `users`
