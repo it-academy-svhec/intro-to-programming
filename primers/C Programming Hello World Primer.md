@@ -12,7 +12,7 @@ Prerequistes: have a Replit account
 1. Search for and select C template
 1. Name your program **My First Program**
 
-![tempsnip](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/6275c3cf-4b9f-4d83-ba3f-f43387a9499b)
+![image](https://github.com/it-academy-svhec/intro-to-programming/assets/61634762/a0574977-cc54-486b-969f-6602f1bfc871)
 
 **Source code files are on the left and the CLI (command-line interface) is on the right.**
 
