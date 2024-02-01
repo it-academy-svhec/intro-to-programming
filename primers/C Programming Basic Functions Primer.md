@@ -31,6 +31,10 @@ C standard library functions are imported to a program with the `#include` prepr
 
 1. Now call the function named `time` and print the result
 
+   ```c
+   printf("%ld", time(NULL));
+   ```
+
 ## Defining Custom Functions
 
 Now let's define a custom function to raise a number to the 2nd power (also called squaring a number). This custom function will only exist inside our source code file. There are more complex steps to sharing the function in other source code files that we will cover later.
