@@ -1,15 +1,13 @@
-# Types, Operators, and Expressions Primer
-In this primer, we will explore data types, operators, and expressions. You will create a single Replit and use it throughout this primer. Pay close attention to the instructions since there are instances where you will need to partially modify the code or completely clear it.
-
-## Data types
+# Data Types Primer
+In this primer, we will explore data types, which are essential to write correct programs in any language. You will create a single Replit and use it throughout this primer. Pay close attention to the instructions since there are instances where you will need to partially modify the code or completely clear it.
 
 Data is stored in memory as ones and zeroes. So whether you are storing a character for a letter grade or an integer for the number of days passed, the data is still binary. We use data types to indicate how we should handle stored binary information. Essentially, we can tag the raw binary data to indicate how it should be handled (e.g., as a number, string of text, or single character). C provides basic data types called primitive data types. More complex data types can be constructed from combined the simple primitive data types.
 
-### Integers
+## Integers
 
 The integer data type is used to store positive or negative whole numbers including zero. This data type is useful for storing information such as the number of days in a week or the quantity of a product in stock.
 
-1. Create a REPL named **Types, Operators, and Expressions Primer**
+1. Create a REPL named **Data Types Primer**
 
 2. Add the following code to define a main program and an integer variable named `days` to store the number of days in a week.
 
@@ -65,7 +63,7 @@ The integer data type is used to store positive or negative whole numbers includ
 
 11. Change the values of `number1` and `number2` and rerun your program
 
-### Characters
+## Characters
 Characters are stored in a program using the integer data type and use the ASCII encoding scheme. This data type is often used to store data in an abbreviated format. For instance, you may have a list of menu options presented to a user. Instead of the user having to type the exam function they want to select, they could choose from a list of options: A, B, C, etc. It is also useful for storing letter grades such as A, B, C, D, and F and statuses such as E for enrolled and W for withdrawn.
 
 1. Add the following lines of code after the print statement in the current program
@@ -85,14 +83,14 @@ Characters are stored in a program using the integer data type and use the ASCII
 
 The reason a number is printed instead is because the format specifier `%d` tell the print statement to handle the output as an integer. Characters are internally stored as integers with that correspond to the associated ASCII character.
 
-### Floating Point Numbers
+## Floating Point Numbers
 It is easy for computers to store integers, but more complex to store floating point (i.e., decimal numbers) numbers. The underlying binary representation is not 100% precise and takes more memory to store floats. Floats are used for storing values such as financial currency, scientific measurements like temperatures, and percentages used in other calculations. You only want to use floating point numbers when 
 absolutely needed because they take more memory and can lead to imprecise results depending on the desired decimal points of precision.
 
-#### Scenario
+### Scenario
 Imagine you receive a complaint from an accountant that uses your payroll software. They report that employees certain employees are receiving less money in each paycheck than expected. For the sake of simplicity, assume the hourly rate is hardcoded as $15.75.
 
-#### Source Code
+### Source Code
 1. Add the following lines of code after the last print statement in your program
 
    ```c
@@ -110,7 +108,7 @@ Imagine you receive a complaint from an accountant that uses your payroll softwa
 
 6. Then add a print statement to print the weekly wage of the employee.
 
-### Constants
+## Constants
 If you have variable that should not change in value, you can add the keyword `const` in front of the data type.
 
 1. Modify your code to make `hourly_rate` a constant
@@ -120,10 +118,3 @@ If you have variable that should not change in value, you can add the keyword `c
 3. Run your program and notice that it fails to compile and you see an error message
 
 4. Revert the change in step 2
-
-## Expressions
-Expressions, like in mathematics are combinations of operations and values that result in new values. For example, `1 + 1` is an expression in basic arithmetic that evaluates to the value of `2`. Expressions can also be combined together like `(1 + 1) * (2 * 3)`. First you evaluate each expression: `2 * 6`. Then you evaluate the new expression formed by the other two, which results in `12`. This systematic approach is also used to interpret expressions in programming languages.
-
-### Operators and Operands
-- Operators: symbols that perform operations with one or more values. `+`, `-`, `*`, and `/` are the basic operators for arithmetic in C and many other languages
-- Operands: the formal terms for the values used by operations. For example, consider `number1 + 5`. The addition operator is being used in combination with the operands of `number1` and `5`.
