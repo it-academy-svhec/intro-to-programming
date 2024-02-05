@@ -3,7 +3,7 @@ In this primer, we will explore data types, operators, and expressions. You will
 
 ## Data types
 
-Data is stored in memory as ones and zeroes. So whether you are storing a character for a letter grade or an integer for the number passed, the data is still binary. We use data types to indicate how we should handle stored binary information. Essentially, we can tag the raw binary data to indicate how it should be handled (e.g., as a number, string of text, or single character). C provides basic data types called primitive data types. More complex data types can be constructed from combined the simple primitive data types.
+Data is stored in memory as ones and zeroes. So whether you are storing a character for a letter grade or an integer for the number of days passed, the data is still binary. We use data types to indicate how we should handle stored binary information. Essentially, we can tag the raw binary data to indicate how it should be handled (e.g., as a number, string of text, or single character). C provides basic data types called primitive data types. More complex data types can be constructed from combined the simple primitive data types.
 
 ### Integers
 
