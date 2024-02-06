@@ -16,22 +16,22 @@ In summary, operands represent the data you work with, operators represent the a
 
 1. Enter the following source code
 
-  ```c
-  #include <stdio.h>
-
-  int main(void) {
-     int num1 = 10;
-     int num2 = 2;
-
-     printf("Addition: %d", num1 + num2);
-     // Todo #1: implement subtraction print statement with num1 and num2
-     // Todo #2: implement multiplication print statement with num1 and num2
-     // Todo #3: implement division print statement with num1 and num2
-
-     return 0;
-  }
-  ```
-  `num1 +_ num2` is an expression. `+` is the addition operator, which operates on two operands: `num1` and `num2`. Notice that the operands are actually variables, not raw data. We could also have hardcoded teh values as `10 + 2`, but then we would have to change the numbers in many different places. Variables help keep your code organized and reduce the number of changes required when updating code.
+    ```c
+    #include <stdio.h>
+  
+    int main(void) {
+       int num1 = 10;
+       int num2 = 2;
+  
+       printf("Addition: %d", num1 + num2);
+       // Todo #1: implement subtraction print statement with num1 and num2
+       // Todo #2: implement multiplication print statement with num1 and num2
+       // Todo #3: implement division print statement with num1 and num2
+  
+       return 0;
+    }
+    ```
+    `num1 +_ num2` is an expression. `+` is the addition operator, which operates on two operands: `num1` and `num2`. Notice that the operands are actually variables, not raw data. We could also have hardcoded teh values as `10 + 2`, but then we would have to change the numbers in many different places. Variables help keep your code organized and reduce the number of changes required when updating code.
 
 1. Complete the 3 TODO items by writing C code. You should also modify the statements to appear on separate lines in the console when the program is run.
 
