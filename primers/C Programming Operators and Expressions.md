@@ -31,8 +31,43 @@ In summary, operands represent the data you work with, operators represent the a
        return 0;
     }
     ```
-    `num1 +_ num2` is an expression. `+` is the addition operator, which operates on two operands: `num1` and `num2`. Notice that the operands are actually variables, not raw data. We could also have hardcoded teh values as `10 + 2`, but then we would have to change the numbers in many different places. Variables help keep your code organized and reduce the number of changes required when updating code.
+    `num1 + num2` is an expression. `+` is the addition operator, which operates on two operands: `num1` and `num2`. Notice that the operands are actually variables, not raw data. We could also have hardcoded teh values as `10 + 2`, but then we would have to change the numbers in many different places. Variables help keep your code organized and reduce the number of changes required when updating code.
 
 1. Complete the 3 TODO items by writing C code. You should also modify the statements to appear on separate lines in the console when the program is run.
 
 1. Run the program and ensure the output is correct and prints on separate lines
+
+1. Add the following lines of code under the last line before the return line of code
+
+    ```c
+    int counter = 0;
+
+    printf("Value of count: %d", counter);
+
+    counter++;
+
+    printf("Value of count: %d", counter);
+    ```
+    The `++` operator incremented the value of the `counter` variable by one.
+
+1. Run the program and you should observe that the value increases by one
+
+1. Modify your code to decrement the value of `count` instead of incrementing it
+
+1. Run the program and ensure you see the correct results
+
+1. Add the following lines of code under the most recent line you added
+
+    ```c
+    int selection = 0;
+    char result;
+    
+    result = is_daytime == 1 ? 'Y' : 'N';
+
+    printf("Selection: %c", result);
+    ```
+    Assume there is a program that supports a menu from which a user can select "Yes" or "No". Since we haven't really shown you how to use strings, we will stick with integers and chars. We want to check the user's input against the value of `1`, which represents true. The ternary operator allows us to set the `result` value to `Y` or `N` depending on the value of `selection`.
+
+1. Run the program
+
+1. Now, modify the program to print out the character `N`
