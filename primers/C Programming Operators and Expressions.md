@@ -62,7 +62,7 @@ In summary, operands represent the data you work with, operators represent the a
     int selection = 0;
     char result;
     
-    result = is_daytime == 1 ? 'Y' : 'N';
+    result = selection == 1 ? 'Y' : 'N';
 
     printf("Selection: %c", result);
     ```
