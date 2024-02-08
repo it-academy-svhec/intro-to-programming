@@ -70,4 +70,4 @@ In summary, operands represent the data you work with, operators represent the a
 
 1. Run the program
 
-1. Now, modify the program to print out the character `N`
+1. Now, modify the program to print out the character `Y`
