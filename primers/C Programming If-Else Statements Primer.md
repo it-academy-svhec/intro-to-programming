@@ -19,6 +19,7 @@ Keyword: `if`
       int number = 0;
 
       // Store a number from the console to the variable called number
+      printf("%s", "Enter a number: ");
       scanf("%d", &number);
 
       if (number > 0)
@@ -39,7 +40,7 @@ Let's enhance the previous program by producing output if the number is not posi
 
 Keywords: `if` and `else`
 
-1. Add the following line of code after the `printf` statement but at the same level of indentation as the `if` keyword.
+1. Add the following line of code after the `printf` statement but at the same level of indentation as the `if` keyword. Add it on a newline.
 
     ```C
     printf("The number is not positive\n");
