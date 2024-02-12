@@ -65,10 +65,10 @@ Keywords: `if` and `else`
 
 1. To fix this problem, move the second print statement into an `else` block as shown below
 
-```C
-else
-  printf("The number is not positive\n");
-```
+    ```C
+    else
+      printf("The number is not positive\n");
+    ```
 
 1. Then test the inputs in the table above. Ensure the program behaves as expected.
 
