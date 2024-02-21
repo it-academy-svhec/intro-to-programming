@@ -156,20 +156,28 @@ Now imagine you have 10,000 users. I seriously doubt you would want to write a p
 ```C
 // Array Access (Reading data)
 int sum = 0; // variable to hold sum of numbers
+
 const int SIZE = 10; // variable to hold size of the array; i.e., the number of elements
+
+int numbers[SIZE];
+
 for (int index = 0; index < SIZE; index++) {
     // accessing element at 'index'
     int current_number = numbers[index];
 
     // add the current number to the total
-    sum += selected_number;
+    sum += current_number;
 }
 ```
 
 ```C
 // Array Storage (Writing data)
 int users_number = 0;
+
 const int SIZE = 10;
+
+int numbers[SIZE];
+
 for (int index = 0; index < SIZE; index++) {
     // get number from user
     scanf("%d", &users_number);
