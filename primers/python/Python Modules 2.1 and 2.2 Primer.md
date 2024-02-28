@@ -61,14 +61,33 @@ Python supports serveral primitive data types including the following
 
 1. Now create variables for `int`, `float`, and `bool`. Then print their values and their data types using the same method above. Note that you can use `True` or `False` for the `bool` data type.
 
-## Literal values
-
 ## Formatted String Literals (F-Strings)
+Literals are static values that are always equal to the same value when you first run a script or program. For example, `NAME = 'Bruce'` defines a variable named `NAME` set to the string literal value of `Bruce`. Of course, the value of the variable is dynamic and can change over the execution of the script, but the initial value of `NAME` is always the string `Bruce`.
+
+What about situations in which you want string literals and varaible values printed in the same line to the console? For instance, you may want to print a string such as `My name is <first_name>.` where `<first_name>` is a placeholder that could be `Bruce` or any other first name. This is where formatted strings, or f-strings are extremely useful.
+
+1. Enter the following code under the previous lines
+
+    ```python
+    first_name = 'Bruce'
+    print(f'My name is {first_name}.')
+    ```
+    Python code can be included inside an f-string by wrapping it in curly braces `{` and `}`. You can get the value of a variable, call a function and get its return value, or even enter mathematical expressions.
+
+1. Run the script. Then change the `first_name` variable to your first name and re-run the script.
+
+1. Now write a print statement that prints the string `1 + 1 = 2` using f-strings. The `2` part of the string should actually be computed by adding the numbers 1 and 1 in Python code.
 
 ## Logical Operators
-- or
-- and
-- not
+Logical operators are used to compare two boolean values at a time and return a boolean value.
+
+- `or` True if at least one of the values is true.
+- `and` True if and only if both values are true.
+- `not` Negates the current value.
+
+1. Create 2 boolean variables called `left` and `right`
+
+1. Write a print statement for each logical operator above. Each print statement should state which operation you are working with and show the result of the operation. For example, if you use the `or` operator, `left = True`, and `right = False`, then the program should print `or operation returns True`. 
 
 ## Assignment vs. Equality Operator
 - Assignment operator: `=` assign the value on the right to the variable on the left
@@ -82,3 +101,11 @@ In the case of compiled languages, data types are checked at compilation (compil
 Dynamic languages, such as Python, check data types during runtime. If you make a mistake related to the values of incompatible data types in Python, you will find while the end-user is running the program. In a compiled language, you would have noticed this problem before the program finished compiling and therefore before the customer used the program.
 
 Python is extremely flexible with regard to data types and this is both a blessing and a curse. How do you mitigate mistakes in a dynamic language? Test, test, and test again! Consider using test-drive development (TDD).
+
+1. Create some variables with different data types you've learned about
+
+1. Then print the values
+
+1. Next, later in the code set those variables to values of different data types. For example, you could start with a variable set to a float and then set it to a string.
+
+1. Try different operations that might by incompatible with those data types. E.g., try adding a string to a float or int. Does Python prevent these incompatible operations? Think about how this differs to compiled languages with more type safety.
