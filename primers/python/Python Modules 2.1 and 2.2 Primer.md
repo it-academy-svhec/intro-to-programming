@@ -41,8 +41,25 @@ Python supports serveral primitive data types including the following
 - Floating point: `float` Store numbers with decimal places.
 - Boolean: `bool` Store True/False values to indicate logical relationships.
 
+1. In the same script, enter the following code under the print statement. Run the script.
 
-- using underscores as a separator
+    ```python
+    message = 'This is a string'
+    print(message)
+    ```
+    The message variable dynamically gets the data type of `str` string
+
+1. You can check the data type of a variable by using the `type()` function
+
+1. Modify the print statement to the following to show the data type of the `message` variable
+
+    ```python
+    print(message, type(message))
+    ```
+
+1. Run the script and it should print the string as well as show the data type
+
+1. Now create variables for `int`, `float`, and `bool`. Then print their values and their data types using the same method above. Note that you can use `True` or `False` for the `bool` data type.
 
 ## Literal values
 
@@ -53,8 +70,9 @@ Python supports serveral primitive data types including the following
 - and
 - not
 
-## Equality Operator
-- ==
+## Assignment vs. Equality Operator
+- Assignment operator: `=` assign the value on the right to the variable on the left
+- Equality operator: `==` check if two values are equal to each other
 
 ## Type Safety
 Programming languages support data types in different ways. The feature of a programming language to enforce stability of data type choices for variables is called type safety. In type safe languages, like C (for the most part), if you declare a variable with a specific data type, the values assigned to the variable must be of the same data type. Languages that exhibit this behavior are often referred to as "strongly typed." Languages that allow values of different data types to be assigned throughout the lifecycle of a variable are often said to be "weakly typed."
