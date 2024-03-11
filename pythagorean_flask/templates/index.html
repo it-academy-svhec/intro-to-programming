@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagorean Theorem Calculator</title>
+</head>
+
+<body>
+  <h2>Solve for the Hypotenuse</h2>
+  <p>Enter the length of leg a and leg b.</p>
+
+  <img src="/static/right-triangle.png" />
+  <img src="/static/equation.png" />
+  
+  <form method="GET" action="/calculate">
+    <div>
+      <label for="leg_a" style="font-weight: bold;">Leg a</label>
+      <input type="number" id="leg_a" name="leg_a" value="{{ leg_a }}">
+    </div>  
+  
+    <div>
+      <label for="leg_b" style="font-weight: bold;">Leg b</label>
+      <input type="number" id="leg_b" name="leg_b" value="{{ leg_b }}">
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Hypotenuse: {{ hypotenuse }}</h2>
+</body>
+
+</html>
