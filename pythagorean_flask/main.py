@@ -2,9 +2,11 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+# TODO: Compute hypotensue properly
+
 
 def compute_hypotenuse(leg_a, leg_b):
-    return (leg_a ** 2 + leg_b ** 2) ** 0.5
+    return 0
 
 
 @app.route('/')
