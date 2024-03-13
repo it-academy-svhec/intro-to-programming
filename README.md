@@ -10,6 +10,7 @@ You should consider learning shortcuts because the more time you spend on the ke
 - Find (Ctrl + F)
 - Select all text in file (Ctrl + A)
 - Comment lines (select lines and press Ctrl + /)
+- Find and replace: Ctrl + F2
 
 ### Copy Commands
 - Copy (Ctrl + C)
