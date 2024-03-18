@@ -80,3 +80,5 @@ The program needs to support the following statuses:
 Recall `switch` statements in the C programming language were a convenient way to avoid countless `else if` blocks. Python doesn't support this exact statement, but version 3.10 released the `match` statement, which is very similar.
 
 1. Refactor the program to use the `match` statement instead. Use this link as reference https://www.geeksforgeeks.org/python-match-case-statement/
+
+1. Run your program and test it
