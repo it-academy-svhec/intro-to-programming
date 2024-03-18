@@ -72,7 +72,7 @@ The program needs to support the following statuses:
       print(name, "does not have a valid status")
     ```
 
-1. Finish the program by implementing the correct conditional checks where `True` is hardcoded
+1. Finish the program by implementing the correct conditional checks where `True` is hardcoded. Note that the code under the first if statement will be grayed out with a warning message about it being "unreachable". This is because the first if statement is hardcoded with True, so it is the only statement that could ever execute.
 
 1. Run the program and test that it works correctly
 
