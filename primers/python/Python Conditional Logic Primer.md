@@ -3,7 +3,7 @@
 ## If Statements
 If statements are the most basic way to make decisions in Python.
 
-1. Create new Repl called **Conditional Logic Primer**
+1. Create new Repl or Google Colab called **Conditional Logic Primer**
 1. Enter the following source code:
 
     ```python
@@ -53,7 +53,7 @@ The program needs to support the following statuses:
 - Sold
 - On hold
 
-1. Clear the Repl and enter the following incomplete code
+1. Clear the Repl or Colab and enter the following incomplete code
 
     ```python
     name = input("Enter the item name:\n")
@@ -72,7 +72,7 @@ The program needs to support the following statuses:
       print(name, "does not have a valid status")
     ```
 
-1. Finish the program by implementing the correct conditional checks where `True` is hardcoded
+1. Finish the program by implementing the correct conditional checks where `True` is hardcoded. Note that the code under the first if statement will be grayed out with a warning message about it being "unreachable". This is because the first if statement is hardcoded with True, so it is the only statement that could ever execute.
 
 1. Run the program and test that it works correctly
 
@@ -80,3 +80,5 @@ The program needs to support the following statuses:
 Recall `switch` statements in the C programming language were a convenient way to avoid countless `else if` blocks. Python doesn't support this exact statement, but version 3.10 released the `match` statement, which is very similar.
 
 1. Refactor the program to use the `match` statement instead. Use this link as reference https://www.geeksforgeeks.org/python-match-case-statement/
+
+1. Run your program and test it
