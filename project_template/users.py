@@ -25,7 +25,7 @@ def run(users):
 
         match option:
             case '1':
-                all()
+                all(users)
             case '2':
                 input('Enter search field')
                 find(users, data)

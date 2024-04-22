@@ -1,7 +1,7 @@
 import users, module2
 
-menu = """
-Module 1 (1)
+menu = f"""
+User Management (1)
 Module 2 (2)
 Quit (q)
 """
