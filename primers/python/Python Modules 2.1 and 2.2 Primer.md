@@ -100,7 +100,7 @@ In the case of compiled languages, data types are checked at compilation (compil
 
 Dynamic languages, such as Python, check data types during runtime. If you make a mistake related to the values of incompatible data types in Python, you will find while the end-user is running the program. In a compiled language, you would have noticed this problem before the program finished compiling and therefore before the customer used the program.
 
-Python is extremely flexible with regard to data types and this is both a blessing and a curse. How do you mitigate mistakes in a dynamic language? Test, test, and test again! Consider using test-drive development (TDD).
+Python is extremely flexible with regard to data types and this is both a blessing and a curse. How do you mitigate mistakes in a dynamic language? Test, test, and test again! Consider using test-driven development (TDD).
 
 1. Create some variables with different data types you've learned about
 
