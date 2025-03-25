@@ -18,6 +18,8 @@ While loops are very useful for running the main control loop in a program. They
     # Replace with the existing code from the conditional logic primer
     ```
 
+1. Finish the missing part of the if statement inside the while loop. The `valid_status` variable should only be set to `True` if the status entered is one of the valid statuses used later in the program.
+
 1. Your program should look like the following code
 
     ```python
@@ -43,8 +45,6 @@ While loops are very useful for running the main control loop in a program. They
       else:
         print(name, "does not have a valid status")
       ```
-
-1. Finish the missing part of the if statement inside the while loop. The `valid_status` variable should only be set to `True` if the status entered is one of the valid statuses used later in the program.
 
 1. Run the program and test with valid and invalid statuses
 
