@@ -1,4 +1,4 @@
-# 🧩 PCEP Primer: Python Exceptions (Hands-On)
+# 🧩 PCEP 4.7 Primer: Python Exceptions
 
 ## Part 1: 🌲 **Python Built-In Exceptions Hierarchy** (PCEP-30-02 4.3)
 
