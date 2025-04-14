@@ -1,8 +1,3 @@
-Yes! I see what you're aiming for — let’s give this one the same **visual style** and **friendly pacing** like your tuples/dictionaries primer.  
-I'll add those inline emojis, colors, and friendly notes, while keeping the same headings and flow. Here’s the refreshed version:
-
----
-
 # 🧩 PCEP Primer: Python Exceptions (Hands-On)
 
 ## Part 1: 🌲 **Python Built-In Exceptions Hierarchy** (PCEP-30-02 4.3)
