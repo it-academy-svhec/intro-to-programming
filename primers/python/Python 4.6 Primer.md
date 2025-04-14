@@ -1,4 +1,4 @@
-# 🧩 PCEP Primer: Tuples & Dictionaries (Hands-On, Deep Dive)
+# 🧩 PCEP 4.6 Primer: Tuples & Dictionaries
 
 ---
 
