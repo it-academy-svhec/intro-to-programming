@@ -1,12 +1,13 @@
-Of course! Here’s your second **primer** in clean, student-friendly **Markdown**, following the same format:
+Yes! I see what you're aiming for — let’s give this one the same **visual style** and **friendly pacing** like your tuples/dictionaries primer.  
+I'll add those inline emojis, colors, and friendly notes, while keeping the same headings and flow. Here’s the refreshed version:
 
 ---
 
 # 🧩 PCEP Primer: Python Exceptions (Hands-On)
 
-## Part 1: **Python Built-In Exceptions Hierarchy** (PCEP-30-02 4.3)
+## Part 1: 🌲 **Python Built-In Exceptions Hierarchy** (PCEP-30-02 4.3)
 
-### 1.1 The Big Picture: Exception Hierarchy
+### 1.1 The Big Picture: Exception Hierarchy 🎨
 
 At the top:
 ```
@@ -22,11 +23,14 @@ BaseException
     └── ValueError
 ```
 
+🧠 **Quick Tip:**  
+Think of this like a family tree — all errors in Python come from `BaseException`.
+
 ---
 
-### 1.2 `BaseException`
+### 1.2 🧩 `BaseException`
 - Root of all exceptions.
-- Usually not caught directly.
+- Usually **not** caught directly (too broad).
 
 ```python
 try:
@@ -35,13 +39,13 @@ except BaseException as e:
     print(e)
 ```
 
-**📝 Try it!**
+📝 **Try it!**
 - Raise and catch a `BaseException`.
 
 ---
 
-### 1.3 `Exception`
-- Most user-defined exceptions derive from `Exception`.
+### 1.3 🎯 `Exception`
+- Most exceptions you work with come from here!
 
 ```python
 try:
@@ -50,14 +54,13 @@ except Exception as e:
     print(e)
 ```
 
-**📝 Try it!**
+📝 **Try it!**
 - Raise and catch an `Exception`.
 
 ---
 
-### 1.4 `SystemExit`
-- Raised by `sys.exit()`.
-- Stops the program.
+### 1.4 🚪 `SystemExit`
+- Raised when Python is asked to exit.
 
 ```python
 import sys
@@ -68,13 +71,16 @@ except SystemExit as e:
     print(e)
 ```
 
-**📝 Try it!**
+📝 **Try it!**
 - Use `sys.exit()` inside a `try-except` block.
+
+🧩 **Did you know?**
+- Catching `SystemExit` can be handy for cleanup!
 
 ---
 
-### 1.5 `KeyboardInterrupt`
-- Triggered when you interrupt the program manually (like `Ctrl + C`).
+### 1.5 ⌨️ `KeyboardInterrupt`
+- Happens when you stop the program manually (Ctrl + C).
 
 ```python
 try:
@@ -84,15 +90,15 @@ except KeyboardInterrupt:
     print("Program interrupted!")
 ```
 
-**📝 Try it!**
-- Run the code and press `Ctrl + C` to stop it.
+📝 **Try it!**
+- Run the code and press **Ctrl + C** to stop it.
 
 ---
 
-### 1.6 Abstract Exceptions: Categories
+### 1.6 🎓 Abstract Exceptions: Categories
 
-#### `ArithmeticError`
-- Base class for math errors like:
+#### 🧮 `ArithmeticError`
+- Base class for math errors:
   - `ZeroDivisionError`
   - `OverflowError`
 
@@ -103,14 +109,14 @@ except ArithmeticError as e:
     print(e)
 ```
 
-#### `LookupError`
+#### 🔍 `LookupError`
 - Base class for lookup failures:
   - `IndexError`
   - `KeyError`
 
 ---
 
-### 1.7 `IndexError`
+### 1.7 🧩 `IndexError`
 
 ```python
 my_list = [1, 2, 3]
@@ -120,12 +126,14 @@ except IndexError as e:
     print(e)
 ```
 
-**📝 Try it!**
+📝 **Try it!**
 - Access an index out of range.
+
+💡 **Tip:** Happens when you go outside list boundaries.
 
 ---
 
-### 1.8 `KeyError`
+### 1.8 🧩 `KeyError`
 
 ```python
 my_dict = {"a": 1}
@@ -135,12 +143,14 @@ except KeyError as e:
     print(e)
 ```
 
-**📝 Try it!**
-- Try accessing a missing key in your dictionary.
+📝 **Try it!**
+- Access a missing key in your dictionary.
+
+💡 **Tip:** Happens when the key isn't found.
 
 ---
 
-### 1.9 `TypeError`
+### 1.9 🧩 `TypeError`
 
 ```python
 try:
@@ -149,12 +159,14 @@ except TypeError as e:
     print(e)
 ```
 
-**📝 Try it!**
-- Try to add a string and an integer.
+📝 **Try it!**
+- Try adding a string and an integer.
+
+💡 **Tip:** Python needs matching types!
 
 ---
 
-### 1.10 `ValueError`
+### 1.10 🧩 `ValueError`
 
 ```python
 try:
@@ -163,14 +175,16 @@ except ValueError as e:
     print(e)
 ```
 
-**📝 Try it!**
+📝 **Try it!**
 - Convert a non-numeric string to int.
+
+💡 **Tip:** Input looks right type-wise, but value is wrong.
 
 ---
 
-## Part 2: **Python Exception Handling Basics** (PCEP-30-02 4.4)
+## Part 2: 🛠️ **Python Exception Handling Basics** (PCEP-30-02 4.4)
 
-### 2.1 Try-Except Block
+### 2.1 ⚙️ Try-Except Block
 
 ```python
 try:
@@ -179,12 +193,14 @@ except ZeroDivisionError:
     print("Cannot divide by zero!")
 ```
 
-**📝 Try it!**
+📝 **Try it!**
 - Write your own try-except block!
+
+🧩 **Note:** Always start with `try:`, follow with `except`.
 
 ---
 
-### 2.2 Ordering Except Branches
+### 2.2 🧩 Ordering Except Branches
 
 ```python
 try:
@@ -196,12 +212,14 @@ except LookupError:
     print("Lookup error caught!")
 ```
 
-**📝 Try it!**
+📝 **Try it!**
 - What happens if you switch the order of `IndexError` and `LookupError`?
+
+💡 **Hint:** Python checks from top to bottom!
 
 ---
 
-### 2.3 Propagating Exceptions Through Functions
+### 2.3 📞 Propagating Exceptions Through Functions
 
 ```python
 def risky_function():
@@ -213,12 +231,14 @@ except ZeroDivisionError:
     print("Handled in calling code")
 ```
 
-**📝 Try it!**
+📝 **Try it!**
 - Call a function that raises an error and handle it outside the function.
+
+💡 **Tip:** Errors can travel ("propagate")!
 
 ---
 
-### 2.4 Delegating Responsibility
+### 2.4 🧩 Delegating Responsibility
 
 ```python
 def risky_function():
@@ -233,14 +253,21 @@ def handler():
 handler()
 ```
 
-**📝 Try it!**
+📝 **Try it!**
 - Write a function that raises an exception and catch it in a separate function.
+
+💡 **Tip:** Functions can handle their own errors!
 
 ---
 
 ## 🚀 Challenge Activity!
+
 - Create a program that:
-  - Asks the user to input two numbers.
-  - Catches `ValueError` if the input is not a number.
-  - Catches `ZeroDivisionError` if the user tries to divide by zero.
-  - Print a success message if no exceptions occur.
+  - Asks the user to enter their age.
+  - Converts the input to an integer.
+  - If the input is not a number, catch `ValueError` and print an error message.
+  - If the age is negative, raise your own `ValueError` with a custom message like *"Age cannot be negative!"*.
+  - If everything is correct, print: *"You are X years old!"*
+
+Bonus:  
+- Wrap the logic in a function, and call the function inside a `try-except` block to practice propagating exceptions.
