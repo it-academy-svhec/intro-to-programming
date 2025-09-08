@@ -24,7 +24,7 @@ The `print()` function is one of the simplest functions in Python and prints out
 1. Modify the first print statement to insert a newline character (`\n`)
 
     ```python
-    print('Hello World!\n')
+    print("Hello World!\n")
     ```
 
 1. Run the script and ensure there is a an extra newline between the strings
