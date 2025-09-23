@@ -1,8 +1,11 @@
 # Advanced Lists Primer
 
+## How to do this primer
+You will use these instructions to build a Python script step-by-step in a separate file. Each step either provides exact code to type into your file or instructions on how to write the code. By the end of the primer, you should have a fully functional Python script.
+
 ## Slicing Lists
 
-1. Create a new Repl called **Advanced Lists Primer**
+1. Create a new Python file in VS Code or code block in Google Colab
 
 1. Enter the following source code
 
