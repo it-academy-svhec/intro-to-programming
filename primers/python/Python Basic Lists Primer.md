@@ -17,7 +17,7 @@ You will use these instructions to build a Python script step-by-step in a separ
 ## Creating Lists
 First, you need to know how to define a new list. New lists can be declared with default values or they can be empty. Assume that we need to store users' first names.
 
-1. Create a new Python file in Google Colab or locally in VS Code
+1. Create a new Python file in VS Code or code block in Google Colab
 
 1. Create an empty list named `users` by entering the following code
 
