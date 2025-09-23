@@ -2,6 +2,9 @@
 Lists are multi-value variables in Python used to store many different values. They can store values of different data types unlike compiled languages such as C, C++, and Java. These data structures are essential to prevent repetitive declarations of similar variables. For example, if you have 10 user accounts each with a first name, last name, and phone number, it would be very tedious to store these values using variables.
 In fact, you would need 30 individual variables. Lists are very efficient because you store many values and reference the list as a single variable. 
 
+## How to do this primer
+You will use these instructions to build a Python script step-by-step in a separate file. Each step either provides exact code to type into your file or instructions on how to write the code. By the end of the primer, you should have a fully functional Python script.
+
 ## Terminology
 - **List:** multi-value variable store storing many values
 - **Element:** an individual value stored in a list
@@ -14,7 +17,7 @@ In fact, you would need 30 individual variables. Lists are very efficient becaus
 ## Creating Lists
 First, you need to know how to define a new list. New lists can be declared with default values or they can be empty. Assume that we need to store users' first names.
 
-1. Create a new Repl called **Basic Lists Primer**
+1. Create a new Python file
 
 1. Create an empty list named `users` by entering the following code
 
