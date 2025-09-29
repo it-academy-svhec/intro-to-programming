@@ -234,7 +234,3 @@ countdown(5)
    def greet():
    print("Hello")  # Error: expected an indented block
    ```
-
----
-
-Happy coding! 🚀
